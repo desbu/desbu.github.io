@@ -422,83 +422,10 @@ article .line {
 	margin: 35px 0;
 }
 
-.carousel-wrapper {
-	position: relative;
-	/* height: 100%; */
-	height: 600px;
-}
-
-.carousel-item {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	/* padding: 25px 50px; */
-	opacity: 0;
-	transition: all 0.5s ease-in-out;
-}
-
-.item-1 {
-	background: url(../articles/a2-1.jpg) no-repeat 50% 50% / contain;
-}
-
-.item-2 {
-	background: url(../articles/a5-4.jpg) no-repeat 50% 50% / contain;
-}
-
-.item-3 {
-	background: url(../articles/a4-3.jpg) no-repeat 50% 50% / contain;
-}
-
-.arrow {
-	position: absolute;
-	top: 0;
-	display: block;
-	width: 50px;
-	height: 100%;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	background: url("../articles/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
-}
-
-.arrow-prev {
-	left: 0;
-}
-
-.arrow-next {
-	right: 0;
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-[id ^="target-item"] {
-	display: none;
-}
-
-.item-1 {
-	z-index: 2;
-	opacity: 1;
-}
-
-*:target~.item-1 {
-	opacity: 0;
-}
-
-#target-item-1:target~.item-1 {
-	opacity: 1;
-}
-
-#target-item-2:target~.item-2,
-#target-item-3:target~.item-3 {
-	z-index: 3;
-	opacity: 1;
-}
-
 .slider {
 	max-width: 100%;
 	position: relative;
 }
-
 
 .slider img {
 	display: none;
@@ -523,8 +450,8 @@ article .line {
 	right: 0;
 }
 
-.slider .prev:hover,
-.slider .next:hover {
+.slider:hover .prev,
+.slider:hover .next {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.15);
 }
@@ -564,7 +491,6 @@ article .line {
 	from {
 		opacity: .4
 	}
-
 	to {
 		opacity: 1
 	}
@@ -574,7 +500,6 @@ article .line {
 	from {
 		opacity: .4
 	}
-
 	to {
 		opacity: 1
 	}
@@ -621,7 +546,6 @@ footer {
 	text-decoration: none;
 	color: white;
 }
-
 
 .follow-us ul {
 	display: flex;
