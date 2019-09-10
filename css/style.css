@@ -400,8 +400,11 @@ article .line {
 	position: relative;
 }
 
-.slider img {
+.slider .item {
 	display: none;
+}
+
+.slider img {
 	height: 600px;
 	object-fit: contain;
 }
@@ -429,7 +432,15 @@ article .line {
 	background-color: rgba(0, 0, 0, 0.15);
 }
 
-.slider-dots {
+header .slider-dots {
+	position: absolute;
+	top: 72px;
+	left: -100px;
+	transform: rotate(90deg);
+	
+}
+
+article .slider-dots {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 575px;

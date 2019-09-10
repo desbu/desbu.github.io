@@ -7,25 +7,31 @@ function showSlides(id) {
   var arrows = document.querySelectorAll(`${id} .arrow`);
   var dots = document.querySelectorAll(`${id} .slider-dots-item`);
 
+  if (slides.length > 0) {
+    slides[0].style.display = "block";
 
-  slides[0].style.display = "block";
-  dots[0].className += " active";
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].addEventListener("click", function () {
+        setIndex(i)
+        removeActive()
+        setActive()
+      })
+    }
+  }
 
-  arrows[0].addEventListener("click", function () {
-    decreaseIndex()
-    removeActive()
-    setActive()
-  })
+  if (dots.length > 0) {
+    dots[0].className += " active";
+  }
 
-  arrows[1].addEventListener("click", function () {
-    increaseIndex()
-    removeActive()
-    setActive()
-  })
+  if (arrows.length > 0) {
+    arrows[0].addEventListener("click", function () {
+      decreaseIndex()
+      removeActive()
+      setActive()
+    })
 
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].addEventListener("click", function () {
-      setIndex(i)
+    arrows[1].addEventListener("click", function () {
+      increaseIndex()
       removeActive()
       setActive()
     })
