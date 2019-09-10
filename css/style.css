@@ -434,7 +434,7 @@ article .line {
 
 header .slider-dots {
 	position: absolute;
-	top: 72px;
+	top: 15px;
 	left: -100px;
 	transform: rotate(90deg);
 	
