@@ -112,7 +112,7 @@ function shiftSlide() {
       }
       i++;
       slides[i].style.opacity = 1;
-      slider.style.transform = `translateX(-${i * 400}px)`;
+      slider.style.transform = `translateX(-${i * 500}px)`;
       buttons[i].style.marginLeft = 0;
       
     }
