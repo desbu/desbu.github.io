@@ -113,8 +113,9 @@ function shiftSlide() {
       i++;
       slides[i].style.opacity = 1;
       slider.style.transform = `translateX(-${i * 500}px)`;
-      buttons[i].style.marginLeft = 0;
-      
+      setTimeout(function () {
+        buttons[i].style.marginLeft = 0;
+      }, 500)
     }
 
   }, 5000);
