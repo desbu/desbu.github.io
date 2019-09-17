@@ -103,7 +103,7 @@ function shiftSlide() {
       }
       setTimeout(function () {
         for (let index = 1; index < buttons.length; index++) {
-          buttons[index].style.marginLeft = '400px';
+          buttons[index].style.marginLeft = '500px';
         }
       }, 1500)
     } else {
