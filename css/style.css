@@ -119,13 +119,29 @@ nav h1 {
 	color: #f2b563;
 }
 
-.nav-features {
+.slider-features {
 	grid-column: 2/3;
-	width: 300px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.nav-features {
+	display: flex;
+	width: 1600px;
 	margin: 0 0 0 100px;
+	/* margin: 0; */
 	padding: 0;
 	list-style: none;
 	color: white;
+	transition: transform ease 1.75s;
+}
+
+.nav-features .item {
+	width: 400px;
+	box-sizing: border-box;
+	/* margin-right: 100px; */
+	/* opacity: 0; */
+	transition: opacity ease 1.0s;
 }
 
 .nav-features h3 {
@@ -143,6 +159,7 @@ nav h1 {
 }
 
 .button {
+	margin-left: 400px;
 	padding: 12px 30px 13px 30px;
 	border-radius: 5px;
 	background-color: #f2b563;
@@ -151,6 +168,7 @@ nav h1 {
 	line-height: 36px;
 	text-decoration: none;
 	color: white;
+	transition: margin-left ease 1.0s;
 }
 
 .wrapper {
@@ -466,9 +484,9 @@ article .slider-dots {
 
 .slider .item {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: .75s;
+	-webkit-animation-duration: 1.0s;
 	animation-name: fade;
-	animation-duration: .75s;
+	animation-duration: 1.0s;
 }
 
 @-webkit-keyframes fade {
