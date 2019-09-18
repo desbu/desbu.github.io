@@ -597,7 +597,7 @@ path {
 	}
 
 	details summary::before {
-		padding-right: 10px
+		content: none;
 	}
 
 	summary {
