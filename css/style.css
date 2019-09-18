@@ -455,7 +455,7 @@ header .slider-dots {
 	top: 15px;
 	left: -100px;
 	transform: rotate(90deg);
-	
+
 }
 
 article .slider-dots {
@@ -493,6 +493,7 @@ article .slider-dots {
 	from {
 		opacity: .4
 	}
+
 	to {
 		opacity: 1
 	}
@@ -502,14 +503,15 @@ article .slider-dots {
 	from {
 		opacity: .4
 	}
+
 	to {
 		opacity: 1
 	}
 }
 
 .clearfix {
-  height: 0px;
-  clear: both;
+	height: 0px;
+	clear: both;
 }
 
 footer {
@@ -571,4 +573,22 @@ path {
 
 .copyright span {
 	font-style: normal;
+}
+
+@media (max-width: 1200px) {
+
+	.main-page,
+	.main-page header,
+	.secondary-page header,
+	footer {
+		grid-template-columns: 50px 1fr 50px;
+	}
+
+	.about-us .team {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.articles ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
