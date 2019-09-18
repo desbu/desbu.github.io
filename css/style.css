@@ -583,7 +583,7 @@ path {
 	.main-page header,
 	.secondary-page header,
 	footer {
-		grid-template-columns: 5% 1fr 5%;
+		grid-template-columns: 10px 1fr 10px;
 	}
 
 	.main-nav {
@@ -592,6 +592,24 @@ path {
 
 	.about-us .team {
 		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 25px;
+	}
+
+	details summary::before {
+		padding-right: 10px
+	}
+
+	summary {
+		padding: 0px 0 0px 10px;
+	}
+
+	summary span {
+		padding-right: 10px;
+	}
+
+	details p {
+		padding: 0 10px 0 10px;
 	}
 
 	.articles ul {
