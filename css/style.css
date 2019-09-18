@@ -583,7 +583,11 @@ path {
 	.main-page header,
 	.secondary-page header,
 	footer {
-		grid-template-columns: 50px 1fr 50px;
+		grid-template-columns: 5% 1fr 5%;
+	}
+
+	.main-nav {
+		display: none;
 	}
 
 	.about-us .team {
