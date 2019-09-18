@@ -612,6 +612,10 @@ path {
 		padding: 0 10px 0 10px;
 	}
 
+	.line {
+		margin: 35px 10px;
+	}
+
 	.articles ul {
 		grid-template-columns: repeat(2, 1fr);
 	}
