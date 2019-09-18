@@ -69,6 +69,7 @@ nav {
 	height: 86px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 50px;
 }
 
@@ -91,6 +92,7 @@ nav h1 {
 
 .main-nav {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -590,5 +592,10 @@ path {
 
 	.articles ul {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.contacts {
+		grid-template-columns: repeat(1, 1fr);
+
 	}
 }
