@@ -1,7 +1,5 @@
 function showSlides(id) {
 
-  // debugger
-
   let slideIndex = 0;
   let slides = document.querySelectorAll(`${id} .item`);
   let arrows = document.querySelectorAll(`${id} .arrow`);
