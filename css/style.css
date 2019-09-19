@@ -586,15 +586,40 @@ path {
 		grid-template-columns: 10px 1fr 10px;
 	}
 
-	.main-nav {
-		display: none;
+	nav {
+		height: 45px;
 	}
+
+	nav h1 {
+		margin: 0;
+		font-size: 20px;
+	}
+
+	.main-nav {
+		/* display: none; */
+		flex-direction: column;
+	}
+
+	.main-nav li {
+		align-self: flex-start;
+		/* margin-left: 50px; */
+	}
+
+	.wrapper h2 {
+		margin: 24px auto;
+	}
+
 
 	.about-us .team {
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 20px;
 		grid-row-gap: 25px;
 	}
+
+	.about-us p:last-of-type {
+		margin-bottom: 30px;
+	}
+
 
 	
 .services .bg {
@@ -603,7 +628,8 @@ path {
 }
 
 .slider-features {
-	display: none;
+	/* display: none; */
+	width: 100%;
 }
 
 	.services h3 {
@@ -618,6 +644,7 @@ path {
 	}
 
 	summary {
+		/* width: 80%; */
 		padding: 0px 0 0px 10px;
 	}
 
