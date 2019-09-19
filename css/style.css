@@ -586,6 +586,16 @@ path {
 		grid-template-columns: 10px 1fr 10px;
 	}
 
+	.main-page {
+		grid-template-rows: minmax(400px, auto);
+	}
+
+	.main-page header {
+
+		grid-template-rows: minmax(200px, auto) minmax(200px, auto);
+
+	}
+
 	nav {
 		height: 45px;
 	}
@@ -613,14 +623,26 @@ path {
 	.about-us .team {
 		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 20px;
-		grid-row-gap: 25px;
+		grid-row-gap: 13px;
+	}
+
+	.about-us h3 {
+		margin-top: 7px;
+	}
+
+	.about-us figcaption {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 28px;
 	}
 
 	.about-us p:last-of-type {
 		margin-bottom: 30px;
 	}
 
-
+	.services h2 {
+		margin-top: 17px;
+	}
 	
 .services .bg {
 	/* width: 100%; */
