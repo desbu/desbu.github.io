@@ -699,10 +699,22 @@ path {
 
 	.contacts {
 		grid-template-columns: repeat(1, 1fr);
+		padding: 23px 0 19px;
+
 	}
 
 	.contacts h3 {
 		text-align: center;
+		margin: 0;
+	}
+
+	.contacts div:not(:first-of-type) h3 {
+		margin-top: 10px;
+	}
+
+
+	.contacts div:last-of-type h3 {
+		margin-bottom: 11px;
 	}
 
 	.contacts li {
