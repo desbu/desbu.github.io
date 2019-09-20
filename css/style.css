@@ -614,6 +614,19 @@ path {
 		/* margin-left: 50px; */
 	}
 
+	.slider-features {
+		/* display: none; */
+		width: 100%;
+	}
+
+	.nav-features {
+		margin: 0;
+	}
+
+	.nav-features .item {
+		width: 500px;
+	}
+
 	.wrapper h2 {
 		margin: 34px auto;
 	}
@@ -645,11 +658,6 @@ path {
 	.services .bg {
 		/* width: 100%; */
 		padding-top: 1px;
-	}
-
-	.slider-features {
-		display: none;
-		width: 100%;
 	}
 
 	.services h3 {
@@ -684,8 +692,6 @@ path {
 	.articles ul {
 		grid-template-columns: repeat(2, 1fr);
 	}
-
-
 }
 
 @media (max-width: 800px) {
