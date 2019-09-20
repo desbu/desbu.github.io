@@ -605,7 +605,7 @@ path {
 	}
 
 	.main-nav {
-		/* display: none; */
+		display: none;
 		flex-direction: column;
 	}
 
