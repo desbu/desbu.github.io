@@ -131,7 +131,6 @@ nav h1 {
 	display: flex;
 	width: 2000px;
 	margin: 0 0 0 100px;
-	/* margin: 0; */
 	padding: 0;
 	list-style: none;
 	color: white;
@@ -141,8 +140,6 @@ nav h1 {
 .nav-features .item {
 	width: 500px;
 	box-sizing: border-box;
-	/* margin-right: 100px; */
-	/* opacity: 0; */
 	transition: opacity ease 0.5s;
 }
 
@@ -581,12 +578,10 @@ path {
 	.secondary-page,
 	.secondary-page header,
 	footer {
-		/* grid-template-columns: 10px minmax(700px, 1fr) 10px; */
 		grid-template-columns: 10px 1fr 10px;
 	}
 
 	.main-page {
-		/* grid-template-rows: minmax(400px, auto); */
 		grid-template-rows: 400px;
 	}
 
@@ -597,6 +592,10 @@ path {
 
 	nav {
 		height: 45px;
+	}
+
+	.nav-logo {
+		display: none;
 	}
 
 	nav h1 {
@@ -611,11 +610,9 @@ path {
 
 	.main-nav li {
 		align-self: flex-start;
-		/* margin-left: 50px; */
 	}
 
 	.slider-features {
-		/* display: none; */
 		width: 100%;
 	}
 
@@ -656,7 +653,6 @@ path {
 	}
 
 	.services .bg {
-		/* width: 100%; */
 		padding-top: 1px;
 	}
 
@@ -665,7 +661,6 @@ path {
 		margin: 30px 0;
 		padding: 0 10px;
 		font-size: 20px;
-		/* text-align: center; */
 	}
 
 	details summary::before {
@@ -673,7 +668,6 @@ path {
 	}
 
 	summary {
-		/* width: 80%; */
 		padding: 0px 0 0px 10px;
 	}
 
@@ -691,6 +685,20 @@ path {
 
 	.articles ul {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.slider img {
+		height: calc((100vw - 20px) / 1.9);
+	}
+
+	.slider .prev,
+	.slider .next {
+		padding-top: calc(((100vw - 20px) / 1.9 - 32px) / 2);
+		padding-bottom: calc(((100vw - 20px) / 1.9 - 32px) / 2);
+	}
+
+	article .slider-dots {
+		top: calc((100vw - 20px) / 1.9 - 25px)
 	}
 }
 
