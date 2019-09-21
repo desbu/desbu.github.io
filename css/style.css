@@ -432,7 +432,6 @@ article .line {
 	line-height: 600px;
 	color: white;
 	transition: 0.6s ease;
-
 }
 
 .slider .next {
@@ -695,8 +694,9 @@ path {
 
 	.slider .prev,
 	.slider .next {
-		padding-top: calc(((100vw - 20px) / 1.9 - 32px) / 2);
-		padding-bottom: calc(((100vw - 20px) / 1.9 - 32px) / 2);
+		/* padding-top: calc(((100vw - 20px) / 1.9 - 32px) / 2);
+		padding-bottom: calc(((100vw - 20px) / 1.9 - 32px) / 2); */
+		line-height: calc((100vw - 20px) / 1.9);
 	}
 
 	.slider:hover .prev,
@@ -729,8 +729,6 @@ path {
 		left: 48%;
 	}
 }
-
-
 
 @media (max-width: 800px) {
 	.articles ul {
