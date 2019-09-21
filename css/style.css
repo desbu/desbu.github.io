@@ -419,17 +419,20 @@ article .line {
 	object-fit: contain;
 }
 
+
 .slider .prev,
 .slider .next {
 	cursor: pointer;
 	position: absolute;
 	top: 0;
 	margin: auto;
-	padding: 284px 50px;
-	color: transparent;
+	padding: 0 50px;
 	font-weight: regular;
 	font-size: 32px;
+	line-height: 600px;
+	color: white;
 	transition: 0.6s ease;
+
 }
 
 .slider .next {
@@ -438,8 +441,7 @@ article .line {
 
 .slider:hover .prev,
 .slider:hover .next {
-	color: white;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 header .slider-dots {
@@ -697,10 +699,38 @@ path {
 		padding-bottom: calc(((100vw - 20px) / 1.9 - 32px) / 2);
 	}
 
+	.slider:hover .prev,
+	.slider:hover .next {
+		background-color: transparent;
+	}
+
 	article .slider-dots {
 		top: calc((100vw - 20px) / 1.9 - 25px)
 	}
+
+	.slider .prev::after,
+	.slider .next::after {
+		content: '';
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		background: rgba(0, 0, 0, 0.1);
+		z-index: -1;
+	}
+
+	.slider .prev::after {
+		left: 52%;
+	}
+
+	.slider .next::after {
+		left: 48%;
+	}
 }
+
+
 
 @media (max-width: 800px) {
 	.articles ul {

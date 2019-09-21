@@ -14,7 +14,7 @@ function showSlides(id) {
         setIndex(i)
         removeActive()
         setActive()
-        updateInterval()
+        // updateInterval()
       })
     }
   }
@@ -28,18 +28,18 @@ function showSlides(id) {
       decreaseIndex()
       removeActive()
       setActive()
-      updateInterval()
+      // updateInterval()
     })
 
     arrows[1].addEventListener('click', function () {
       increaseIndex()
       removeActive()
       setActive()
-      updateInterval()
+      // updateInterval()
     })
   }
 
-  updateInterval();
+  // updateInterval();
 
   function updateInterval() {
     clearInterval(interval);
