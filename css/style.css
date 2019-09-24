@@ -636,6 +636,7 @@ path {
 		left: 0;
 		width: 70vw;
 		height: 100vh;
+		padding-top: 10px;
 		flex-direction: column;
 		background: #323232;
 		transform: translateX(-71vw);
@@ -648,12 +649,17 @@ path {
 	}
 
 	.main-nav li {
-		margin-left: 30px;
-		margin-top: 20px;
+		margin: 0;
+		padding: 0;
 		align-self: auto;
 	}
 
 	.main-nav a {
+		display: block;
+		/* width: 100%; */
+		padding-left: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	text-transform: uppercase;
 	}
 
