@@ -621,6 +621,8 @@ path {
 		width: 100vw;
 		height: 100vh;
 		z-index: 3;
+		background: rgba(0, 0, 0, .2);
+		transition: ease .5s;
 	}
 
 	
@@ -638,7 +640,7 @@ path {
 		background: #323232;
 		transform: translateX(-71vw);
 		z-index: 5;
-		transition: transform ease .25s;
+		transition: transform ease .3s;
 	}
 
 	.main-nav.active {
@@ -682,7 +684,7 @@ path {
 		width: 40px;
 		height: 3px;
 		background-color: white;
-		transition: transform ease .25s;
+		transition: transform ease .3s;
 	}
 
 	.button-nav span::before {
