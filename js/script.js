@@ -39,7 +39,7 @@ function showSlides(id) {
     })
   }
 
-  // updateInterval();
+  // updateInterval()
 
   function updateInterval() {
     clearInterval(interval);
@@ -82,6 +82,8 @@ function showSlides(id) {
     }
   }
 }
+
+callMenu()
 
 function callMenu() {
   let button = document.querySelector('.button-nav');

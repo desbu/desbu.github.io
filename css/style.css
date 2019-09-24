@@ -650,7 +650,7 @@ path {
 	.main-nav li {
 		margin-left: 30px;
 		margin-top: 20px;
-		align-self: flex-start;
+		align-self: auto;
 	}
 
 	.main-nav a {
