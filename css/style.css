@@ -623,6 +623,12 @@ path {
 		z-index: 3;
 	}
 
+	
+	.overlay.active {
+		display: block;
+
+	}
+
 	.main-nav {
 		position: fixed;
 		left: 0;

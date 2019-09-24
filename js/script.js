@@ -86,21 +86,32 @@ function showSlides(id) {
 function callMenu() {
   let button = document.querySelector('.button-nav');
   let links = document.querySelectorAll('.link');
+  let overlay = document.querySelector('.overlay');
   let nav = document.querySelector('.main-nav');
+  
 
   button.addEventListener('click', function() {
     button.classList.toggle('active');
-    document.body.classList.toggle('overflow');
     nav.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.classList.toggle('overflow');
   })
 
   for(let index of links) {
     index.addEventListener('click', function() {
       button.classList.toggle('active');
-      document.body.classList.toggle('overflow');
       nav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      document.body.classList.toggle('overflow');
     })
   }
+
+  overlay.addEventListener('click', function() {
+    button.classList.toggle('active');
+    nav.classList.toggle('active');
+    overlay.classList.toggle('active');
+    document.body.classList.toggle('overflow');
+  })
 }
 
 function shiftSlide() {
