@@ -484,7 +484,7 @@ article .slider-dots {
 	transition: background-color 0.6s ease;
 }
 
-.active,
+.slider-dots-item .active,
 .slider-dots-item:hover {
 	background-color: #aaa;
 }
@@ -563,7 +563,6 @@ footer {
 	color: white;
 }
 
-
 .follow-us ul {
 	display: flex;
 	list-style: none;
@@ -605,10 +604,6 @@ path {
 		background: #5a89aa url("../img/header.jpg") no-repeat;
 	}
 
-	nav {
-		height: 45px;
-	}
-
 	.nav-logo {
 		display: none;
 	}
@@ -618,13 +613,95 @@ path {
 		font-size: 20px;
 	}
 
-	.main-nav {
+	.overlay {
 		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 3;
+	}
+
+	.main-nav {
+		position: fixed;
+		left: 0;
+		width: 70vw;
+		height: 100vh;
 		flex-direction: column;
+		background: #323232;
+		transform: translateX(-71vw);
+		z-index: 5;
+		transition: transform ease .25s;
+	}
+
+	.main-nav.active {
+		transform: translateX(0);
 	}
 
 	.main-nav li {
+		margin-left: 30px;
+		margin-top: 20px;
 		align-self: flex-start;
+	}
+
+	.main-nav a {
+	text-transform: uppercase;
+	}
+
+	.button-nav {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 50px;
+		height: 50px;
+	}
+
+	.button-nav span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 40px;
+		height: 3px;
+		transform: translate(-50%, -50%);
+		z-index: 7;
+		background-color: white;
+		
+	}
+
+	.button-nav span::before,
+	.button-nav span::after {
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 3px;
+		background-color: white;
+		transition: transform ease .25s;
+	}
+
+	.button-nav span::before {
+		transform: translateY(10px);
+	}
+
+	.button-nav span::after {
+		transform: translateY(-10px);
+	}
+
+	.button-nav.active span {
+		background-color: transparent;
+	}
+
+	.button-nav.active span::before {
+		transform: rotate(-45deg);
+	}
+
+	.button-nav.active span::after {
+		bottom: 0;
+		transform: rotate(45deg);
+	}
+
+	.overflow {
+		overflow: hidden;
 	}
 
 	.slider-features {

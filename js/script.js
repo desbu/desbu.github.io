@@ -10,7 +10,7 @@ function showSlides(id) {
     slides[0].style.display = 'block';
 
     for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener('click', function () {
+      dots[i].addEventListener('click', function() {
         setIndex(i)
         removeActive()
         setActive()
@@ -24,14 +24,14 @@ function showSlides(id) {
   }
 
   if (arrows.length) {
-    arrows[0].addEventListener('click', function () {
+    arrows[0].addEventListener('click', function() {
       decreaseIndex()
       removeActive()
       setActive()
       // updateInterval()
     })
 
-    arrows[1].addEventListener('click', function () {
+    arrows[1].addEventListener('click', function() {
       increaseIndex()
       removeActive()
       setActive()
@@ -43,7 +43,7 @@ function showSlides(id) {
 
   function updateInterval() {
     clearInterval(interval);
-    interval = setInterval(function () {
+    interval = setInterval(function() {
       increaseIndex()
       removeActive()
       setActive()
@@ -83,6 +83,26 @@ function showSlides(id) {
   }
 }
 
+function callMenu() {
+  let button = document.querySelector('.button-nav');
+  let links = document.querySelectorAll('.link');
+  let nav = document.querySelector('.main-nav');
+
+  button.addEventListener('click', function() {
+    button.classList.toggle('active');
+    document.body.classList.toggle('overflow');
+    nav.classList.toggle('active');
+  })
+
+  for(let index of links) {
+    index.addEventListener('click', function() {
+      button.classList.toggle('active');
+      document.body.classList.toggle('overflow');
+      nav.classList.toggle('active');
+    })
+  }
+}
+
 function shiftSlide() {
   let slider = document.querySelector('.nav-features');
   let slides = document.querySelectorAll('.item');
@@ -118,3 +138,4 @@ function shiftSlide() {
 
   }, 6000);
 }
+
