@@ -86,7 +86,7 @@ function showSlides(id) {
 callMenu()
 
 function callMenu() {
-  let button = document.querySelector('.button-nav');
+  let button = document.querySelector('.nav-button');
   let links = document.querySelectorAll('.link');
   let overlay = document.querySelector('.overlay');
   let nav = document.querySelector('.main-nav');
