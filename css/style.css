@@ -645,7 +645,7 @@ path {
 		left: 0;
 		width: 70vw;
 		height: 100vh;
-		/* padding-top: 50px; */
+		padding-top: 50px;
 		flex-direction: column;
 		background: #323232;
 		transform: translateX(-71vw);
@@ -674,7 +674,7 @@ path {
 
 	.line-nav {
 		/* border-bottom: 3px solid #f2b563; */
-		margin: 15px 30px;
+		margin: 5px 30px;
 		/* z-index: 9; */
 	}
 
