@@ -831,6 +831,11 @@ path {
 		height: calc((100vw - 20px) / 1.9);
 	}
 
+	article .left {
+		width: 100%;
+		float: none;
+	}
+
 	.slider .prev,
 	.slider .next {
 		line-height: calc((100vw - 20px) / 1.9);
