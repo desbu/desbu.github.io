@@ -863,10 +863,6 @@ path {
 		display: none;
 	}
 
-	.articles ul {
-		grid-template-columns: 1fr;
-	}
-
 	.articles p {
 		display: none;
 	}
@@ -902,5 +898,11 @@ path {
 		margin-right: auto;
 		justify-content: space-between;
 		list-style: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.articles ul {
+		grid-template-columns: 1fr;
 	}
 }
