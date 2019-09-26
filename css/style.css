@@ -673,6 +673,10 @@ path {
 		text-transform: uppercase;
 	}
 
+	.secondary-page .main-nav a {
+		color: white;
+	}
+
 	.line-nav {
 		/* border-bottom: 3px solid #f2b563; */
 		margin: 5px 30px;
