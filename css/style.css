@@ -834,6 +834,7 @@ path {
 	article .left {
 		width: 100%;
 		float: none;
+		margin-right: 0;
 	}
 
 	.slider .prev,
