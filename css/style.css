@@ -934,9 +934,6 @@ path {
 	}
 
 	.slider-features {
-		width: 90%;
-
-		/* display: none; */
-		/* width: 100%; */
+		width: 100%;
 	}
 }
