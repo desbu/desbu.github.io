@@ -711,7 +711,6 @@ path {
 		transform: translate(-50%, -50%);
 		/* z-index: 7; */
 		background-color: white;
-
 	}
 
 	.nav-button span::before,
@@ -750,8 +749,10 @@ path {
 	}
 
 	.slider-features {
-		display: none;
-		width: 100%;
+		grid-row-start: 2;
+		width: 400px;
+		/* display: none; */
+		/* width: 100%; */
 	}
 
 	.nav-features {
