@@ -199,7 +199,7 @@ function ShowHideMenu() {
   let nav = document.querySelector('nav');
   let button = document.querySelector('.nav-button');
   window.addEventListener('scroll', function () {
-    if ((document.body.getBoundingClientRect()).top > scrollPos + 20) {
+    if ((document.body.getBoundingClientRect()).top > scrollPos + 10) {
       nav.style.top = '0px';
       button.style.top = '0px';
       scrollPos = (document.body.getBoundingClientRect()).top;
