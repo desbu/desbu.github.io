@@ -103,6 +103,12 @@ nav h1 {
 	margin-left: 50px;
 }
 
+.main-nav li:first-of-type,
+.nav-button,
+.overlay {
+	display: none;
+}
+
 .main-nav a {
 	font-size: 18px;
 	font-weight: 400;
@@ -613,10 +619,9 @@ path {
 		z-index: 2;
 	}
 
-	.nav-logo {
-		/* display: none; */
-
-	}
+	/* .nav-logo {
+		display: none;
+	} */
 
 	nav h1 {
 		margin: 0;
@@ -626,7 +631,6 @@ path {
 	}
 
 	.overlay {
-		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -656,6 +660,11 @@ path {
 
 	.main-nav.active {
 		transform: translateX(0);
+	}
+
+	.main-nav li:first-of-type,
+	.nav-button {
+		display: block;
 	}
 
 	.main-nav li {
