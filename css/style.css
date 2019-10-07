@@ -617,7 +617,7 @@ path {
 		padding-left: 10px;
 		background: #323232;
 		z-index: 2;
-		transition: ease .5s;
+		transition: top ease .5s;
 	}
 
 	nav.active {
