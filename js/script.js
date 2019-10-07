@@ -10,7 +10,7 @@ function showSlides(id) {
     slides[0].style.display = 'block';
 
     for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener('click', function() {
+      dots[i].addEventListener('click', function () {
         setIndex(i)
         removeActive()
         setActive()
@@ -24,14 +24,14 @@ function showSlides(id) {
   }
 
   if (arrows.length) {
-    arrows[0].addEventListener('click', function() {
+    arrows[0].addEventListener('click', function () {
       decreaseIndex()
       removeActive()
       setActive()
       // updateInterval()
     })
 
-    arrows[1].addEventListener('click', function() {
+    arrows[1].addEventListener('click', function () {
       increaseIndex()
       removeActive()
       setActive()
@@ -43,7 +43,7 @@ function showSlides(id) {
 
   function updateInterval() {
     clearInterval(interval);
-    interval = setInterval(function() {
+    interval = setInterval(function () {
       increaseIndex()
       removeActive()
       setActive()
@@ -90,17 +90,17 @@ function callMenu() {
   let links = document.querySelectorAll('.link');
   let overlay = document.querySelector('.overlay');
   let nav = document.querySelector('.main-nav');
-  
 
-  button.addEventListener('click', function() {
+
+  button.addEventListener('click', function () {
     button.classList.toggle('active');
     nav.classList.toggle('active');
     overlay.classList.toggle('active');
     document.body.classList.toggle('overflow');
   })
 
-  for(let index of links) {
-    index.addEventListener('click', function() {
+  for (let index of links) {
+    index.addEventListener('click', function () {
       button.classList.toggle('active');
       nav.classList.toggle('active');
       overlay.classList.toggle('active');
@@ -108,7 +108,7 @@ function callMenu() {
     })
   }
 
-  overlay.addEventListener('click', function() {
+  overlay.addEventListener('click', function () {
     button.classList.toggle('active');
     nav.classList.toggle('active');
     overlay.classList.toggle('active');
@@ -152,3 +152,24 @@ function shiftSlide() {
   }, 6000);
 }
 
+ShowHideMenu()
+
+function ShowHideMenu() {
+  let scrollPos = 0;
+  let nav = document.querySelector('nav');
+  let button = document.querySelector('.nav-button');
+  window.addEventListener('scroll', function () {
+    if ((document.body.getBoundingClientRect()).top >= scrollPos) {
+      nav.style.top = '0px';
+      button.style.top = '0px';
+    // nav.classList.toggle('active');
+    // console.log(scrollPos);
+    } else {
+      nav.style.top = '-50px';
+      button.style.top = '-50px';
+    // nav.classList.toggle('active');
+    // console.log(scrollPos);
+    }
+    scrollPos = (document.body.getBoundingClientRect()).top;
+  });
+}
