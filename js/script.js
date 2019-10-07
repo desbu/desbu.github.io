@@ -154,46 +154,6 @@ function shiftSlide() {
 
 ShowHideMenu()
 
-// function ShowHideMenu() {
-//   let scrollPos = 0;
-//   let nav = document.querySelector('nav');
-//   let button = document.querySelector('.nav-button');
-//   window.addEventListener('scroll', function () {
-//     if ((document.body.getBoundingClientRect()).top > scrollPos + 50) {
-//       nav.style.top = '0px';
-//       button.style.top = '0px';
-//       scrollPos = (document.body.getBoundingClientRect()).top;
-//       console.log(scrollPos);
-//     } else {
-//       nav.style.top = '-50px';
-//       button.style.top = '-50px';
-//       scrollPos = (document.body.getBoundingClientRect()).top;
-//       console.log(scrollPos);
-//     }
-//   });
-// }
-
-// function ShowHideMenu() {
-//   let scrollPos = 0;
-//   let nav = document.querySelector('nav');
-//   let button = document.querySelector('.nav-button');
-//   window.addEventListener('scroll', function () {
-//     if ((document.body.getBoundingClientRect()).top > scrollPos + 50) {
-//       nav.style.top = '0px';
-//       button.style.top = '0px';
-//       scrollPos = (document.body.getBoundingClientRect()).top;
-//       console.log(scrollPos);
-//     } else if ((document.body.getBoundingClientRect()).top > scrollPos) {
-//       console.log('ничего');
-//     } else {
-//       nav.style.top = '-50px';
-//       button.style.top = '-50px';
-//       scrollPos = (document.body.getBoundingClientRect()).top;
-//       console.log('-scrollPos');
-//     }
-//   });
-// }
-
 function ShowHideMenu() {
   let scrollPos = 0;
   let nav = document.querySelector('nav');
