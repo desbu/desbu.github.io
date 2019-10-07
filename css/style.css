@@ -755,8 +755,6 @@ path {
 	.slider-features {
 		grid-row-start: 2;
 		width: 400px;
-		/* display: none; */
-		/* width: 100%; */
 	}
 
 	.nav-features {
@@ -933,5 +931,12 @@ path {
 @media (max-width: 600px) {
 	.articles ul {
 		grid-template-columns: 1fr;
+	}
+
+	.slider-features {
+		width: 90%;
+
+		/* display: none; */
+		/* width: 100%; */
 	}
 }
