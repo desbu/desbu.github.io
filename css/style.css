@@ -14,10 +14,17 @@ body {
 	color: #323232;
 }
 
+html,
+.main-page {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
 .main-page {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
 	grid-template-rows: minmax(700px, auto);
+	
 }
 
 .secondary-page {
