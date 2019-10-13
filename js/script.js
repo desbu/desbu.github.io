@@ -163,12 +163,10 @@ function ShowHideMenu() {
       nav.style.top = '0px';
       button.style.top = '0px';
       scrollPos = (document.body.getBoundingClientRect()).top;
-      console.log(scrollPos);
     } else if ((document.body.getBoundingClientRect()).top < scrollPos) {
       nav.style.top = '-50px';
       button.style.top = '-50px';
       scrollPos = (document.body.getBoundingClientRect()).top;
-      console.log('-scrollPos');
     }
   });
 }
