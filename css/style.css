@@ -238,7 +238,8 @@ nav h1 {
 	margin-bottom: 0px;
 }
 
-.about-us a {
+.about-us a,
+.about-us a:active {
 	color: #323232;
 }
 
