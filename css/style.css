@@ -238,6 +238,10 @@ nav h1 {
 	margin-bottom: 0px;
 }
 
+.about-us a {
+	color: #323232;
+}
+
 .services .bg {
 	padding-bottom: 50px;
 	background: #f9f9f9;
