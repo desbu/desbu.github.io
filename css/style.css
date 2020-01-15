@@ -862,6 +862,10 @@ path {
 		font-size: 20px;
 	}
 
+	details:active {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
 	details summary::before {
 		content: none;
 	}
