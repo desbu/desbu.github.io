@@ -23,7 +23,7 @@ body {
 .main-page {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
-	grid-template-rows: 100vh;
+	grid-template-rows: minmax(700px, auto);
 	
 }
 
@@ -53,7 +53,7 @@ input[type="radio"].visually-hidden {
 .main-page header {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
-	grid-template-rows: 35vh;
+	grid-template-rows: minmax(300px, auto) minmax(400px, auto);
 	grid-column: 1/-1;
 	background: #5a89aa url("../img/header.jpg") no-repeat 0 -100px;
 	background-size: cover;
@@ -134,13 +134,13 @@ nav h1 {
 	color: #f2b563;
 }
 
-/* .slider-features {
+.slider-features {
 	grid-column: 2/3;
 	width: 50%;
 	overflow: hidden;
-} */
+}
 
-/* .nav-features {
+.nav-features {
 	display: flex;
 	width: 2000px;
 	margin: 0 0 0 100px;
@@ -148,8 +148,8 @@ nav h1 {
 	list-style: none;
 	color: white;
 	transition: transform ease 1.75s;
-} */
-/* 
+}
+
 .nav-features .item {
 	width: 500px;
 	box-sizing: border-box;
@@ -168,36 +168,9 @@ nav h1 {
 	font-weight: 300;
 	line-height: 36px;
 	margin: 0 0 50px 0;
-} */
-
-.nav-features {
-	grid-column: 2/3;
-	/* width: 50%;
-	overflow: hidden; */
 }
 
-.nav-features p {
-	font-size: 36px;
-	line-height: 54px;
-	text-transform: uppercase;
-	color: white;
-}
-
-.nav-features p span {
-	color: #f2b563;
-}
-
-.nav-features p sup {
-	position: relative;
-	top: -24px;
-	left: 6px;
-	font-size: 16px;
-	letter-spacing: .1px;
-	text-transform: lowercase;
-	/* vertical-align: top; */
-}
-
-/* .button {
+.button {
 	margin-left: 400px;
 	padding: 12px 30px 13px 30px;
 	border-radius: 5px;
@@ -208,32 +181,6 @@ nav h1 {
 	text-decoration: none;
 	color: white;
 	transition: margin-left ease 2.0s;
-} */
-
-.button {
-	padding: 12px 30px 13px 30px;
-	border: 1px solid white ;
-	border-radius: 25px;
-	font-size: 12px;
-	letter-spacing: .3px;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: white;
-}
-
-header div:last-of-type {
-	grid-column: 2/3;
-	align-self: end;
-	padding-bottom: 30px;
-}
-
-header div:last-of-type ul {
-	padding: 0;
-}
-
-.svg {
-	width: 32px;
-	height: 32px;
 }
 
 .wrapper {
@@ -860,10 +807,6 @@ path {
 		margin: 30px 0;
 		padding: 0 10px;
 		font-size: 20px;
-	}
-
-	details:active {
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
 	details summary::before {
