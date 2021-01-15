@@ -3,32 +3,32 @@
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://marchuk.by/</loc>
-	<lastmod>2020-10-07T00:02:15+01:00</lastmod>
+	<lastmod>2021-01-15T15:55:40+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://marchuk.by/articles/a1.html</loc>
-	<lastmod>2020-10-07T00:02:15+01:00</lastmod>
+	<lastmod>2021-01-15T15:55:41+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://marchuk.by/articles/a2.html</loc>
-	<lastmod>2020-10-07T00:02:18+01:00</lastmod>
+	<lastmod>2021-01-15T15:55:45+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://marchuk.by/articles/a3.html</loc>
-	<lastmod>2020-10-07T00:02:18+01:00</lastmod>
+	<lastmod>2021-01-15T15:55:44+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://marchuk.by/articles/a4.html</loc>
-	<lastmod>2020-10-07T00:02:18+01:00</lastmod>
+	<lastmod>2021-01-15T15:55:45+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://marchuk.by/articles/a5.html</loc>
-	<lastmod>2020-10-07T00:02:18+01:00</lastmod>
-	<priority>0.8</priority>
+	<lastmod>2021-01-15T15:55:45+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 </urlset>
