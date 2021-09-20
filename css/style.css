@@ -314,9 +314,11 @@ details li p {
 details span {
 	float: right;
 	padding-right: 50px;
+	flex-shrink: 0;
 }
 
 details li {
+	display: flex;
 	margin-top: 16px;
 }
 
@@ -335,7 +337,7 @@ summary p {
 summary p,
 details li p {
 	display: inline-block;
-	width: 66%;
+	/* width: 66%; */
 	margin: 0;
 }
 
