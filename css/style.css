@@ -277,7 +277,10 @@ details {
 }
 
 details summary {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
+	
 }
 
 details summary::-webkit-details-marker {
