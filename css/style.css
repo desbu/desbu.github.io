@@ -309,12 +309,13 @@ details p {
 	padding: 0 150px 0 100px;
 }
 
+.services__name,
 summary p,
 details li p {
 	padding: 0 0 0 100px;
 }
 
-details span {
+.services__price {
 	float: right;
 	padding-right: 50px;
 	flex-shrink: 0;
@@ -431,6 +432,10 @@ article p:last-of-type {
 
 figure {
 	margin: 0;
+}
+
+figure:not(:last-of-type) {
+	margin: 0 0 35px 0;
 }
 
 article img {
