@@ -407,6 +407,10 @@ details span {
 	margin: 14px 0 0 0;
 }
 
+article ul {
+	padding-left: 30px;
+}
+
 article .center {
 	width: 100%;
 }
