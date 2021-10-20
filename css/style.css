@@ -964,14 +964,18 @@ article .slider-dots {
 		margin: 14px 0 0 0;
 	}
 
-	.slider img {
-		height: calc((100vw - 20px) / 1.9);
-	}
-
 	article .left {
 		width: 100%;
 		float: none;
 		margin: 0;
+	}
+
+	.slider img {
+		height: calc((100vw - 20px) / 1.9);
+	}
+
+	figure:not(:last-of-type) {
+		margin: 0 0 10px 0;
 	}
 
 	.slider .prev,
