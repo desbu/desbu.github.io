@@ -72,6 +72,16 @@ main {
 	grid-column: 2/3;
 }
 
+.secondary-page main{
+	grid-column: 1/-1;
+}
+
+article > p,
+article > ul {
+	max-width: 1140px;
+	margin: 0 auto 0;
+}
+
 nav {
 	grid-column: 2/3;
 	height: 86px;
