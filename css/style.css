@@ -414,23 +414,64 @@ details span {
 	list-style: none;
 }
 
-.projects a {
-	text-decoration: none;
-	color: #323232;
+.projects__item {
+	position: relative;
 }
 
-.projects h3 {
-	/* margin: -8px 0 14px 0; */
-	margin: 14px 0 -8px 0;
-	font-size: 18px;
-	font-weight: 500;
+.projects__figure::after {
+	content: '1111';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	z-index: 2;
+	transition: opacity 0.6s ease;
 }
 
-.projects img {
+
+
+.projects__img {
+	position: relative;
 	vertical-align: bottom;
 	width: 100%;
 	background-size: cover;
 	box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
+}
+
+/* .projects__img:hover.projects__img::after,
+.projects__img:hover.projects__title {
+	opacity: 1;
+} */
+
+.projects__title {
+	/* margin: -8px 0 14px 0; */
+	position: absolute;
+	left: 35px;
+	bottom: 35px;
+	margin: 14px 0 -8px 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	opacity: 0;
+	z-index: 3;
+}
+
+.projects__figure:hover.projects__figure::after,
+.projects__figure:hover .projects__title {
+	opacity: 1;
+}
+
+.projects__link {
+	/* position: relative; */
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #323232;
+	z-index: 2;
 }
 
 .projects__paragraph {
