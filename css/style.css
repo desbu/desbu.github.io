@@ -468,7 +468,7 @@ figure {
 	margin: 0;
 }
 
-figure + figure {
+.project-page figure + figure {
 	margin: 35px 0 0 0;
 }
 
