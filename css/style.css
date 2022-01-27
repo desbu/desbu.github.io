@@ -419,7 +419,7 @@ details span {
 }
 
 .projects__figure::after {
-	content: '1111';
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
