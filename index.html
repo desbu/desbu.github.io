@@ -91,7 +91,7 @@
 
 		<section class="about-us">
 			<div class="wrapper">
-				<h2 id="about-us">О нас</h2>
+				<h2 class="title" id="about-us">О нас</h2>
 			</div>
 			<p>Мы&nbsp;&mdash; команда профессиональных инженеров, поможем точно и&nbsp;качественно реализовать задумку
 				вашего будущего дома. Опыт, знание современных технологий строительства, актуальных методов
@@ -136,10 +136,79 @@
 				на&nbsp;себя ответственность и&nbsp;гарантируем надёжность и&nbsp;эксплуатационную пригодность
 				проектируемых объектов.</p>
 		</section>
+		
 
 		<section class="services">
 			<div class="wrapper">
-				<h2 id="services">Услуги и цены</h2>
+				<h2 class="title" id="services">Услуги и цены</h2>
+			</div>
+			<!-- <div class="bg"> -->
+				<input id="calculator" type="number" value="150">
+				<ul class="main-services">
+					<li class="main-services__item">
+						<h3 class="main-services__title">Базовый</h3>
+						<span class="main-services__price">900 BYN</span>
+						<ul class="list">
+							<li class="list__item">
+								<h4 class="list__title">Архитекутура</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, accusamus consequatur suscipit velit voluptatem deleniti rem laborum!</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Генеральный план</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti fugit! Ea.</p>
+							</li>
+						</ul>
+						<button class="main-services__button">Заказать</button>
+					</li>
+					<li class="main-services__item">
+						<h3 class="main-services__title">Расширенный</h3>
+						<span class="main-services__price">1400 BYN</span>
+						<ul class="list">
+							<li class="list__item">
+								<h4 class="list__title">Архитекутура</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, accusamus consequatur suscipit velit voluptatem deleniti rem laborum!</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Генеральный план</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti fugit! Ea.</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Визуализация</h4>
+								<p class="list__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis possimus numquam?</p>
+							</li>
+						</ul>
+						<button class="main-services__button">Заказать</button>
+					</li>
+					<li class="main-services__item">
+						<h3 class="main-services__title">Полный</h3>
+						<span class="main-services__price">2100 BYN</span>
+						<ul class="list">
+							<li class="list__item">
+								<h4 class="list__title">Архитекутура</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, accusamus consequatur suscipit velit voluptatem deleniti rem laborum!</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Генеральный план</h4>
+								<p class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti fugit! Ea.</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Визуализация</h4>
+								<p class="list__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis possimus numquam?</p>
+							</li>
+							<li class="list__item">
+								<h4 class="list__title">Конструктив</h4>
+								<p class="list__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis possimus numquam, odio ratione ullam voluptates quibusdam! Accusamus, incidunt error?</p>
+							</li>
+						</ul>
+						<button class="main-services__button">Заказать</button>
+					</li>
+				</ul>
+			<!-- </div> -->
+		</section>
+
+		<!-- <section class="services">
+			<div class="wrapper">
+				<h2 class="title" id="services">Услуги и цены</h2>
 			</div>
 			<div class="bg">
 				<h3>Архитектурная часть</h3>
@@ -169,21 +238,6 @@
 						</details>
 						<div class="line"></div>
 					</li>
-					<!-- <li>
-						<details>
-							<summary>
-								<p>Комплект «Полный»</p><span>от 1380р</span>
-							</summary>
-							<p>Проработка объемно-планировочного решения; общие указания; ведомость расхода основных
-								строительных материалов; характерные фасады; ведомость наружной отделки; схема
-								фундамента, схемы этажей; экспликация помещений; экспликация полов; кладочные планы
-								этажей, узлы кладки; ведомость проемов; схемы заполнения оконных проемов; конструкция
-								наружных стен; характерные разрезы; план кровли, узлы кровли; ведомость элементов
-								водосточной системы, узлы; схемы крыльца и&nbsp;террасы, узлы; схемы вентиляционных
-								и&nbsp;дымовых каналов; указания по&nbsp;производству работ.</p>
-						</details>
-						<div class="line"></div>
-					</li> -->
 					<li>
 						<details>
 							<summary>
@@ -285,17 +339,6 @@
 				</ul>
 				<h3>Дополнительные услуги</h3>
 				<ul>
-					<!-- <li>
-						<details>
-							<summary>
-								<p>Разработка сметной документации</p><span>от 240р</span>
-							</summary>
-							<p>Часть проектной документации, характеризующая объект в&nbsp;его денежном выражении.
-								Содержит информацию о&nbsp;стоимости его возведения (стоимость и&nbsp;количество
-								строительных материалов, затраты труда, стоимость производства работ и&nbsp;т.д.).</p>
-						</details>
-						<div class="line"></div>
-					</li> -->
 					<li>
 						<details>
 							<summary>
@@ -306,16 +349,6 @@
 						</details>
 						<div class="line"></div>
 					</li>
-					<!-- <li>
-						<details>
-							<summary>
-								<p>Выезд на объект</p><span>от 45р</span>
-							</summary>
-							<p>Выезд на&nbsp;объект для осмотра, оценки и&nbsp;произведения обмеров существующих
-								построек.</p>
-						</details>
-						<div class="line"></div>
-					</li> -->
 					<li>
 						<details>
 							<summary>
@@ -327,11 +360,11 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="articles">
 			<div class="wrapper">
-				<h2 id="articles">Статьи</h2>
+				<h2 class="title" id="articles">Статьи</h2>
 			</div>
 			<ul class="articles__items">
 				<li class="articles__item">
@@ -496,7 +529,8 @@
 	<script src="../js/script.js"></script>
 
 	<script>
-		shiftSlide()
+		shiftSlide();
+		countArea();
 	</script>
 
 	<script type="application/ld+json">
