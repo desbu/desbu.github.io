@@ -358,6 +358,10 @@ nav h1 {
 	cursor: pointer;
 }
 
+.main-services__button:hover {
+	background: #f2b563;	
+}
+
 .services li:last-of-type p {
 	margin-bottom: 0;
 }
