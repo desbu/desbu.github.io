@@ -170,3 +170,18 @@ function ShowHideMenu() {
     }
   });
 }
+
+
+// Calculator
+
+const input = document.querySelector('#calculator');
+const prices = document.querySelectorAll('.main-services__price')
+
+input.addEventListener('input', countArea)
+
+function countArea() {
+  let area = input.value;
+  prices[0].innerText = `${10 *area} BYN`
+  prices[1].innerText = `${15 *area} BYN`
+  prices[2].innerText = `${25 *area} BYN`
+};
