@@ -295,7 +295,8 @@ nav h1 {
 	padding: 30px 15px 45px;
 	border: 1px solid black;
 	border-radius: 10px;
-	transition: all 0.2s ease-in-out;
+	transition: all
+	0.2s ease-in-out;
 }
 
 .main-services__item:hover {
