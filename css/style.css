@@ -293,8 +293,10 @@ nav h1 {
 	flex-direction: column;
 	align-items: center;
 	padding: 30px 15px 45px;
-	border: 1px solid black;
-	border-radius: 10px;
+	/* border: 1px solid black; */
+	/* border-radius: 10px; */
+	background: #f9f9f9;
+	box-shadow: 0px 0px 4px 0px rgb(128 128 128 / 30%);
 	transition: all
 	0.2s ease-in-out;
 }
@@ -302,7 +304,7 @@ nav h1 {
 .main-services__item:hover {
 	transform: translateY(-5px);
 	/* box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.05); */
-	box-shadow: 0px 10px 30px 0px rgb(128 128 128 / 10%);
+	/* box-shadow: 0px 10px 30px 0px rgb(128 128 128 / 10%); */
 }
 
 /* .main-services__item:nth-of-type(2) {
@@ -327,15 +329,62 @@ nav h1 {
 
 .list {
 	flex-grow: 1;
-	padding-left: 25px;
+	padding-left: 10px;
 	/* padding: 0; */
 	margin: 0;
 	/* list-style: none; */
 }
 
 .list__item {
-	padding-left: 10px;
+	position: relative;
+	padding-left: 25px;
 	margin: 25px 0;
+	list-style: none;
+}
+
+.list__item.check :before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #f2b563;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.list__item.plus::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 10px;
+    /* height: 9px; */
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #f2b563;
+    transform-origin: bottom left;
+    /* transform: rotate(45deg); */
+}
+
+.list__item.plus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    width: 10px;
+    /* height: 9px; */
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #f2b563;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
 }
 
 .list__title {
@@ -359,7 +408,7 @@ nav h1 {
 	padding: 10px 50px;
 	/* border: none; */
 	border: 2px solid #f2b563;
-	border-radius: 20px;
+	border-radius: 5px;
 	background: none;
 	/* background-color: #f2b563; */
 	/* color: white; */
