@@ -179,9 +179,27 @@ const prices = document.querySelectorAll('.main-services__price')
 
 input.addEventListener('input', countArea)
 
+const basisArea = 150;
+
 function countArea() {
+  if (input.value > 400) input.value = 400;
+  if (input.value < 0) input.value = 0;
+
   let area = input.value;
-  prices[0].innerText = `${10 *area} BYN`
-  prices[1].innerText = `${15 *area} BYN`
-  prices[2].innerText = `${25 *area} BYN`
+
+  if (area > basisArea) {
+    prices[0].innerText = `${Math.ceil(basisArea * 8 + (area - basisArea) * basisArea / area * 8)} BYN`;
+    prices[1].innerText = `${Math.ceil(basisArea * 10 + (area - basisArea) * basisArea / area * 10)} BYN`;
+    prices[2].innerText = `${Math.ceil(basisArea * 38 + (area - basisArea) * basisArea / area * 38)} BYN`;
+  } else if (area > 0) {
+    if (area < 75) area = 75;
+    prices[0].innerText = `${Math.ceil(basisArea * 8 + (area - basisArea) * area / basisArea * 8)} BYN`;
+    prices[1].innerText = `${Math.ceil(basisArea * 10 + (area - basisArea) * area / basisArea * 10)} BYN`;
+    prices[2].innerText = `${Math.ceil(basisArea * 38 + (area - basisArea) * area / basisArea * 38)} BYN`;
+  }
+  else {
+    prices[0].innerText = `0 BYN`;
+    prices[1].innerText = `0 BYN`;
+    prices[2].innerText = `0 BYN`;
+  }
 };
