@@ -188,14 +188,14 @@ function countArea() {
   let area = input.value;
 
   if (area > basisArea) {
-    prices[0].innerText = `${Math.ceil(basisArea * 8 + (area - basisArea) * basisArea / area * 8)} BYN`;
-    prices[1].innerText = `${Math.ceil(basisArea * 10 + (area - basisArea) * basisArea / area * 10)} BYN`;
-    prices[2].innerText = `${Math.ceil(basisArea * 38 + (area - basisArea) * basisArea / area * 38)} BYN`;
+    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) / 10) * 10} BYN`;
+    prices[1].innerText = `${Math.ceil((basisArea * 10 + (area - basisArea) * basisArea / area * 10) / 10) * 10} BYN`;
+    prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) / 10) * 10} BYN`;
   } else if (area > 0) {
     if (area < 75) area = 75;
-    prices[0].innerText = `${Math.ceil(basisArea * 8 + (area - basisArea) * area / basisArea * 8)} BYN`;
-    prices[1].innerText = `${Math.ceil(basisArea * 10 + (area - basisArea) * area / basisArea * 10)} BYN`;
-    prices[2].innerText = `${Math.ceil(basisArea * 38 + (area - basisArea) * area / basisArea * 38)} BYN`;
+    prices[0].innerText = `${(Math.ceil(basisArea * 8 + (area - basisArea) * area / basisArea * 8) / 10) * 10} BYN`;
+    prices[1].innerText = `${(Math.ceil(basisArea * 10 + (area - basisArea) * area / basisArea * 10) / 10) * 10} BYN`;
+    prices[2].innerText = `${(Math.ceil(basisArea * 38 + (area - basisArea) * area / basisArea * 38) / 10) * 10} BYN`;
   }
   else {
     prices[0].innerText = `0 BYN`;
