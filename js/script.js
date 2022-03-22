@@ -174,10 +174,20 @@ function ShowHideMenu() {
 
 // Calculator
 
-const input = document.querySelector('#calculator');
-const prices = document.querySelectorAll('.main-services__price')
+const input = document.querySelector('#area');
+// const checkbox = document.querySelector('#secondFloor');
+const radioOne = document.querySelector('#one');
+const radioTwo = document.querySelector('#two');
+const radioConstruction = document.querySelector('#construction');
+const radioReconstruction = document.querySelector('#reconstruction');
+const prices = document.querySelectorAll('.main-services__price');
 
-input.addEventListener('input', countArea)
+input.addEventListener('input', countArea);
+// checkbox.addEventListener('change', countArea);
+radioOne.addEventListener('change', countArea);
+radioTwo.addEventListener('change', countArea);
+radioConstruction.addEventListener('change', countArea);
+radioReconstruction.addEventListener('change', countArea);
 
 const basisArea = 150;
 
@@ -186,16 +196,19 @@ function countArea() {
   if (input.value < 0) input.value = 0;
 
   let area = input.value;
+  // let k1 = checkbox.checked ? 1.2 : 1;
+  let k1 = radioTwo.checked ? 1.2 : 1;
+  let k2 = radioReconstruction.checked ? 1.2 : 1;
 
   if (area > basisArea) {
-    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) / 10) * 10} BYN`;
-    prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * basisArea / area * 12) / 10) * 10} BYN`;
-    prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) / 10) * 10} BYN`;
+    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) * k1 * k2 / 10) * 10} BYN`;
+    prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * basisArea / area * 12) * k1 * k2 / 10) * 10} BYN`;
+    prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) * k1 * k2 / 10) * 10} BYN`;
   } else if (area > 0) {
     if (area < 75) area = 75;
-    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * area / basisArea * 8) / 10) * 10} BYN`;
-    prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * area / basisArea * 12) / 10) * 10} BYN`;
-    prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * area / basisArea * 38) / 10) * 10} BYN`;
+    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * area / basisArea * 8) * k1 * k2 / 10) * 10} BYN`;
+    prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * area / basisArea * 12) * k1 * k2 / 10) * 10} BYN`;
+    prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * area / basisArea * 38) * k1 * k2 / 10) * 10} BYN`;
   }
   else {
     prices[0].innerText = `0 BYN`;
