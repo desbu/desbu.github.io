@@ -142,23 +142,34 @@
 			<div class="wrapper">
 				<h2 class="title" id="services">Услуги и цены</h2>
 			</div>
-			<!-- <div class="bg"> -->
-				<div class="input-wrapper">
-					<label for="area">Площадь дома</label>
-					<input class="input" id="area" type="number" step="10" max="400" min="0" value="160">
-
-					<!-- <input id="secondFloor" type="checkbox" > -->
-					<!-- <label for="secondFloor">2 этаж</label> -->
-
-					<input id="one" name="floors" type="radio" checked>
-					<label for="one">1 этаж</label>
-					<input id="two" name="floors" type="radio">
-					<label for="two">2 этажа</label>
-
-					<input id="construction" name="type" type="radio" checked>
-					<label for="construction">Строительство</label>
-					<input id="reconstruction" name="type" type="radio">
-					<label for="reconstruction">Реконструкция</label>
+				<div class="inputs">
+					<div class="inputs__block">
+						<div class="inputs__item">
+							<label for="area">Площадь дома:</label>
+							<input class="input" id="area" type="number" step="10" max="400" min="0" value="160">
+						</div>
+					</div>
+					<div class="inputs__block">
+						<div class="inputs__item">
+							<input id="one" name="floors" type="radio" checked>
+							<label for="one">1 этаж</label>
+						</div>
+						<div class="inputs__item">
+							<input id="two" name="floors" type="radio">
+							<label for="two">2 этажа</label>
+						</div>
+					</div>
+					<div class="inputs__block">
+						<div class="inputs__item">
+							<input id="construction" name="type" type="radio" checked>
+							<label for="construction">Строительство</label>
+						</div>
+						<div class="inputs__item">
+							<input id="reconstruction" name="type" type="radio">
+							<label for="reconstruction">Реконструкция</label>
+						</div>
+					</div>
+					
 				</div>
 				<ul class="main-services">
 					<li class="main-services__item">
@@ -219,7 +230,6 @@
 						<button class="main-services__button">Заказать</button>
 					</li>
 				</ul>
-			<!-- </div> -->
 		</section>
 
 		<!-- <section class="services">
