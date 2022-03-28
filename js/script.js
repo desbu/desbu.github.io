@@ -175,19 +175,14 @@ function ShowHideMenu() {
 // Calculator
 
 const input = document.querySelector('#area');
-// const checkbox = document.querySelector('#secondFloor');
+const radios = document.querySelectorAll('[type=radio]');
 const radioOne = document.querySelector('#one');
 const radioTwo = document.querySelector('#two');
 const radioConstruction = document.querySelector('#construction');
-const radioReconstruction = document.querySelector('#reconstruction');
 const prices = document.querySelectorAll('.main-services__price');
 
 input.addEventListener('input', countArea);
-// checkbox.addEventListener('change', countArea);
-radioOne.addEventListener('change', countArea);
-radioTwo.addEventListener('change', countArea);
-radioConstruction.addEventListener('change', countArea);
-radioReconstruction.addEventListener('change', countArea);
+radios.forEach(item => item.addEventListener('change', countArea));
 
 const basisArea = 150;
 
@@ -196,9 +191,8 @@ function countArea() {
   if (input.value < 0) input.value = 0;
 
   let area = input.value;
-  // let k1 = checkbox.checked ? 1.2 : 1;
-  let k1 = radioTwo.checked ? 1.2 : 1;
-  let k2 = radioReconstruction.checked ? 1.2 : 1;
+  let k1 = radioOne.checked ? 1 : radioTwo.checked ? 1.15 : 1.3;
+  let k2 = radioConstruction.checked ? 1 : 1.3;
 
   if (area > basisArea) {
     prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) * k1 * k2 / 10) * 10} BYN`;
