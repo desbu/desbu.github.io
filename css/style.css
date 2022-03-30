@@ -255,18 +255,23 @@ nav h1 {
 
 .inputs {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 25px;
 	margin: 0 auto 45px;
 	padding: 0;
-	width: 950px;
+	/* max-width: 950px; */
     border-radius: 5px;
 	list-style: none;
 }
 
 .inputs__block {
 	display: flex;
+	/* margin-bottom: 20px; */
+	box-sizing: border-box;
 	align-items: center;
+	
 }
 
 .inputs__item {
@@ -1086,6 +1091,17 @@ article .slider-dots {
 		margin-bottom: 30px;
 	}
 
+	/* Services start */
+
+	.main-services {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 25px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
 	.services h2 {
 		margin-top: 27px;
 	}
@@ -1109,23 +1125,23 @@ article .slider-dots {
 		padding: 0px 0 0px 10px;
 	}
 
-	summary span,
-	details li span {
+	summary span {
 		padding-right: 10px;
 	}
 
-	details p,
-	details li p {
+	.add-services__text {
 		padding: 0 10px 0 10px;
 	}
 
-	summary p {
+	.add-services__title {
 		padding: 0 10px 0 0;
 	}
 
 	.line {
 		margin: 25px 10px;
 	}
+
+	/* Services end */
 
 	.articles__items {
 		grid-template-columns: repeat(2, 1fr);
@@ -1189,33 +1205,16 @@ article .slider-dots {
 	.footer__content {
 		flex-direction: column;
 		align-items: flex-start;
-		/* display: grid; */
-		/* grid-template-columns: 10px 1fr 10px; */
-		/* grid-column: 1/-1;
-		display: flex;
-		justify-content: space-between;
-		align-items: center; */
 	}
 
 	.footer__info {
-		/* order: 2; */
 		margin: 80px 0 0;
 		max-width: 100%;
 		width: 100%;
-		/* margin: 100px 0;
-		max-width: 370px; */
 	}
 
 	.footer__logo {
 		display: none;
-	}
-
-	.footer__title {
-		/* margin: 0;
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 18px;
-		color: white; */
 	}
 
 	.footer__name {
@@ -1225,7 +1224,6 @@ article .slider-dots {
 	.footer__text,
 	.footer__name {
 		margin: 15px 0 45px;
-
 	}
 
 
@@ -1238,8 +1236,7 @@ article .slider-dots {
 		margin: 0 0 25px 0;
 		padding: 40px 0 0 0;
 		width: 100%;
-		max-width: 100%;
-		/* width: 370px; */
+		max-width: 100%; 
 		border-top: 1px solid #c8c8c8;
 	}
 
