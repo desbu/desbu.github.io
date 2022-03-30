@@ -478,11 +478,10 @@ details {
 	position: relative;
 }
 
-details summary {
+.add-services__summary {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	
 }
 
 details summary::-webkit-details-marker {
@@ -496,77 +495,36 @@ details summary::before {
 	background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1.2em 1.2em;
 	width: 2em;
 	height: 2em;
-	transition: transform 0.1s linear;
-}
-
-details[open]>summary~* {
-	animation: open 5s ease;
+	transition: transform 0.15s ease-in-out;
 }
 
 details[open] summary:before {
 	transform: rotate(90deg);
 }
 
-details p {
+.add-services__text {
 	padding: 0 150px 0 50px;
 }
 
-summary p,
-details li p {
-	/* padding: 0 0 0 100px; */
+.add-services__title {
 	padding: 0 0 0 50px;
 }
 
-details span {
-	float: right;
-	/* padding-right: 50px; */
-	flex-shrink: 0;
-}
-
-details li {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 16px;
-}
-
-details li p {
-	font-style: italic;
-}
-
-summary span,
-summary p {
+.add-services__title,
+.add-services__price {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 36px;
 	cursor: pointer;
 }
 
-summary p,
-details li p {
+.add-services__title {
 	display: inline-block;
 	margin: 0;
 }
 
-summary:hover,
-summary:focus {
+.add-services__summary:hover {
 	color: #f2b563;
-}
-
-.gray {
-	font-size: 14px;
-	font-weight: 300;
-	font-style: italic;
-	color: #969696;
-}
-
-details li:first-of-type p,
-details li:first-of-type span {
-	margin-top: 0;
-}
-
-details p,
-details span {
-	margin-bottom: 0;
 }
 
 .line {
