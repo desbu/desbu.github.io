@@ -1083,6 +1083,10 @@ article .slider-dots {
 
 	/* Services start */
 
+	.services h2 {
+		margin-top: 27px;
+	}
+
 	.main-services {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -1105,20 +1109,9 @@ article .slider-dots {
 		padding: 30px 15px;
 	}
 
-	.services h2 {
-		margin-top: 27px;
+	.main-services__button {
+		margin-top: 15px;
 	}
-
-	.services .bg {
-		/* padding-top: 1px; */
-	}
-
-	/* .services h3 {
-		display: block;
-		margin: 30px 0;
-		padding: 0 10px;
-		font-size: 20px;
-	} */
 
 	details summary::before {
 		content: none;
