@@ -507,12 +507,10 @@ details[open] summary:before {
 	transform: rotate(90deg);
 }
 
-.add-services__text {
-	padding: 0 150px 0 50px;
-}
-
 .add-services__title {
+	display: inline-block;
 	padding: 0 0 0 50px;
+	margin: 0;
 }
 
 .add-services__title,
@@ -523,9 +521,8 @@ details[open] summary:before {
 	cursor: pointer;
 }
 
-.add-services__title {
-	display: inline-block;
-	margin: 0;
+.add-services__text {
+	padding: 0 150px 0 50px;
 }
 
 .add-services__summary:hover {
@@ -1119,14 +1116,6 @@ article .slider-dots {
 
 	details summary::before {
 		content: none;
-	}
-
-	summary {
-		/* padding: 0px 0 0px 10px; */
-	}
-
-	summary span {
-		/* padding-right: 10px; */
 	}
 
 	.add-services__text {
