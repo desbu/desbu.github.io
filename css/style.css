@@ -1098,12 +1098,16 @@ article .slider-dots {
 		list-style: none;
 	}
 
+	.main-services__item {
+		padding: 30px 15px;
+	}
+
 	.services h2 {
 		margin-top: 27px;
 	}
 
 	.services .bg {
-		padding-top: 1px;
+		/* padding-top: 1px; */
 	}
 
 	/* .services h3 {
@@ -1123,6 +1127,10 @@ article .slider-dots {
 
 	.add-services__title {
 		padding: 0 10px 0 0;
+	}
+
+	.list__item {
+		margin: 15px 0;
 	}
 
 	.line {
