@@ -261,14 +261,12 @@ nav h1 {
 	gap: 25px;
 	margin: 0 auto 45px;
 	padding: 0;
-	/* max-width: 950px; */
     border-radius: 5px;
 	list-style: none;
 }
 
 .inputs__block {
 	display: flex;
-	/* margin-bottom: 20px; */
 	box-sizing: border-box;
 	align-items: center;
 	
@@ -314,9 +312,6 @@ input[type=radio] {
 }
 
 input[type=number] {
-	/* position: absolute;
-	top: -7px;
-	left: 150px; */
 	margin-left: -5px;
 	padding: 10px 20px;
 	width: 31px;
@@ -838,7 +833,6 @@ article .slider-dots {
 	align-items: flex-end;
 	margin: 100px 0;
 	max-width: 370px;
-	/* height: 269px; */
 }
 
 .footer__live {
@@ -1098,8 +1092,17 @@ article .slider-dots {
 		list-style: none;
 	}
 
+	.main-services__title {
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+
+	.main-services__price {
+		font-size: 20px;
+	}
+
 	.main-services__item {
-		padding: 30px 15px;
+		padding: 20px 15px;
 	}
 
 	.services h2 {
