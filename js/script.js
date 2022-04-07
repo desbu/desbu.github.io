@@ -195,16 +195,15 @@ function countArea() {
   let k2 = radioConstruction.checked ? 1 : 1.3;
 
   if (area > basisArea) {
-    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) * k1 * k2 / 10) * 10} BYN`;
+    prices[0].innerText = `${Math.ceil((basisArea * 7 + (area - basisArea) * basisArea / area * 7) * k1 * k2 / 10) * 10} BYN`;
     prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * basisArea / area * 12) * k1 * k2 / 10) * 10} BYN`;
     prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) * k1 * k2 / 10) * 10} BYN`;
   } else if (area > 0) {
     if (area < 75) area = 75;
-    prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * area / basisArea * 8) * k1 * k2 / 10) * 10} BYN`;
+    prices[0].innerText = `${Math.ceil((basisArea * 7 + (area - basisArea) * area / basisArea * 7) * k1 * k2 / 10) * 10} BYN`;
     prices[1].innerText = `${Math.ceil((basisArea * 12 + (area - basisArea) * area / basisArea * 12) * k1 * k2 / 10) * 10} BYN`;
     prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * area / basisArea * 38) * k1 * k2 / 10) * 10} BYN`;
-  }
-  else {
+  } else {
     prices[0].innerText = `0 BYN`;
     prices[1].innerText = `0 BYN`;
     prices[2].innerText = `0 BYN`;
