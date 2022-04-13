@@ -418,12 +418,10 @@ input::-webkit-inner-spin-button {
     left: 0;
     top: 14px;
     width: 10px;
-    /* height: 9px; */
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #f2b563;
     transform-origin: bottom left;
-    /* transform: rotate(45deg); */
 }
 
 .list__item.plus::before {
@@ -433,7 +431,6 @@ input::-webkit-inner-spin-button {
     left: 5px;
     top: 7px;
     width: 10px;
-    /* height: 9px; */
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #f2b563;
@@ -449,8 +446,8 @@ input::-webkit-inner-spin-button {
 
 .list__text {
 	margin: 0;
-	font-size: 12px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #969696;
 }
 
