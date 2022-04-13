@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap&subset=cyrillic');
 
-*:focus {
+/* *:focus {
 	outline: none;
-}
+} */
 
 html,
 body {
@@ -130,7 +130,6 @@ nav h1 {
 	color: #323232;
 }
 
-.main-nav a:focus,
 .main-nav a:hover {
 	color: #f2b563;
 }
@@ -380,6 +379,10 @@ input::-webkit-inner-spin-button {
 	color: #f2b563;
 }
 
+.main-services__duration {
+	color: #969696;
+}
+
 .list {
 	flex-grow: 1;
 	padding-left: 10px;
@@ -415,12 +418,10 @@ input::-webkit-inner-spin-button {
     left: 0;
     top: 14px;
     width: 10px;
-    /* height: 9px; */
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #f2b563;
     transform-origin: bottom left;
-    /* transform: rotate(45deg); */
 }
 
 .list__item.plus::before {
@@ -430,7 +431,6 @@ input::-webkit-inner-spin-button {
     left: 5px;
     top: 7px;
     width: 10px;
-    /* height: 9px; */
     border-width: 0 2px 2px 0;
     border-style: solid;
     border-color: #f2b563;
