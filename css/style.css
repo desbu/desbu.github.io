@@ -266,19 +266,22 @@ nav h1 {
 
 .inputs__block {
 	display: flex;
-	box-sizing: border-box;
 	align-items: center;
-	
+	height: 100%;
 }
 
 .inputs__item {
+	height: 100%;
 	position: relative;
 }
 
 label {
+	display: inline-block;
 	padding: 10px 20px;
+	height: 22px;
 	font-size: 18px;
 	cursor: pointer;
+	line-height: 22px;
 	transition: all	0.2s ease-in-out;
 	border-top: 2px solid #f2b563;
 	border-right: 1px solid #f2b563;
@@ -296,7 +299,8 @@ label {
 }
 
 label[for=area],
-input[type="radio"]:checked+label {
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
 	background: #f2b563;
 	color: white;
 }
@@ -320,9 +324,16 @@ input[type=number] {
 	-moz-appearance: textfield;
 }
 
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
 	margin: 0;
 }
 
