@@ -16,5 +16,3 @@ function initMap() {
 		map: map,
 	});
 }
-
-console.log('map');
