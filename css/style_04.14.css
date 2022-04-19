@@ -789,6 +789,17 @@ article .slider-dots {
 
 /* Footer */
 
+#map {
+	height: 470px;
+	/* The height is 400 pixels */
+	width: 100%;
+	/* The width is the width of the web page */
+}
+
+.footer__map {
+	grid-column: 1/-1;
+}
+
 .footer__content {
 	grid-column: 2/-2;
 	display: flex;

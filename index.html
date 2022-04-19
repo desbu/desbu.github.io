@@ -293,13 +293,13 @@
 				</ul>
 		</section>
 
-		<section id="reviews">
+		<!-- <section id="reviews">
 			<div class="wrapper">
 				<h2 class="title">Отзывы</h2>
 			</div>
 			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 			<div class="elfsight-app-d622b7e2-f77b-4037-83d4-6e7f7ec56be2"></div>
-		</section>
+		</section> -->
 
 		<section class="articles" id="articles">
 			<div class="wrapper">
@@ -358,6 +358,10 @@
 	</main>
 
 	<footer class="footer" id="contacts">
+		<div class="footer__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus" width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<!-- <div class="footer__map" id="map"></div> -->
 		<div class="footer__content">
 			<div class="footer__info">
 				<a class="footer__title" href="#top">MARCHUK.BY | Строительные проекты</a>
@@ -461,11 +465,17 @@
 		</div>
 	</footer>
 
-	<script src="../js/script.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/calculator.js"></script>
+	<script src="js/map.js"></script>
 
 	<script>
 		shiftSlide();
 		countArea();
+	</script>
+
+	<script async
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzxc8p8t7S6GY10YyxQaU1hLeOTgcfoJQ&callback=initMap">
 	</script>
 
 	<script type="application/ld+json">
