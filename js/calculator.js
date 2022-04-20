@@ -34,4 +34,4 @@ function countArea() {
 		prices[1].innerText = `0 BYN`;
 		prices[2].innerText = `0 BYN`;
 	}
-};
+}; 
