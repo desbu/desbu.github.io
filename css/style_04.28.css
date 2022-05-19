@@ -254,7 +254,7 @@ nav h1 {
 
 .inputs {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 25px;
@@ -277,7 +277,7 @@ nav h1 {
 
 label {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 10px 19px;
 	height: 22px;
 	font-size: 18px;
 	cursor: pointer;
@@ -298,6 +298,7 @@ label {
 	border-right: 2px solid #f2b563;
 }
 
+label[for=type],
 label[for=area],
 input[type="radio"]:checked + label,
 input[type="checkbox"]:checked + label {
@@ -305,6 +306,41 @@ input[type="checkbox"]:checked + label {
 	color: white;
 }
 
+select[id=type] {
+	position: relative;
+	padding: 10px 38px 10px 19px;
+	font-size: 18px;
+	border: 2px solid #f2b563;
+	cursor: pointer;
+	-moz-appearance: textfield;
+}
+
+.select__wrapper:before {
+	position: absolute;
+	content: "";
+	right: 7px;
+	top: 51%;
+	width: 2em;
+	height: 2em;
+	transform: rotate(90deg) translateX(-50%);
+	transition: transform 0.15s ease-in-out;
+	background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1.3em 1.3em;
+	z-index: 5;
+	pointer-events: none;
+}
+
+
+input[type=number] {
+	margin-left: -5px;
+	padding: 10px 19px;
+	width: 31px;
+	height: 22px;
+	font-size: 18px;
+	border: 2px solid #f2b563;
+	-moz-appearance: textfield;
+}
+
+select,
 input[type=radio] {
 	position: absolute;
 	-webkit-appearance: none;
@@ -314,15 +350,6 @@ input[type=radio] {
 	appearance: none;
 }
 
-input[type=number] {
-	margin-left: -5px;
-	padding: 10px 20px;
-	width: 31px;
-	height: 22px;
-	font-size: 18px;
-	border: 2px solid #f2b563;
-	-moz-appearance: textfield;
-}
 
 input[type=radio],
 input[type=checkbox] {
@@ -503,7 +530,7 @@ details summary::before {
 	content: "";
 	position: absolute;
 	left: 0px;
-	background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1.2em 1.2em;
+	background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1.3em 1.3em;
 	width: 2em;
 	height: 2em;
 	transition: transform 0.15s ease-in-out;
