@@ -25,19 +25,19 @@ function countArea() {
 
 	switch (select.value) {
 		case 'house':
-			k4 = 1.1;
+			k4 = 1;
 			break;
 		case 'garden-house':
-			k4 = 1.2;
+			k4 = 0.9;
 			break;
 		case 'bath':
-			k4 = 1.3;
+			k4 = 0.8;
 			break;
 		case 'garage':
-			k4 = 1.4;
+			k4 = 0.7;
 			break;
 		case 'household-block':
-			k4 = 1.5;
+			k4 = 0.6;
 			break;
 	}
 
