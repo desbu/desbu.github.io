@@ -319,7 +319,7 @@ select[id=type] {
 	position: absolute;
 	content: "";
 	right: 7px;
-	top: 51%;
+	top: 50%;
 	width: 2em;
 	height: 2em;
 	transform: rotate(90deg) translateX(-50%);
