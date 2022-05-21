@@ -254,7 +254,7 @@ nav h1 {
 
 .inputs {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 25px;
@@ -311,8 +311,9 @@ select[id=type] {
 	padding: 10px 38px 10px 19px;
 	font-size: 18px;
 	border: 2px solid #f2b563;
+	background: white;
 	cursor: pointer;
-	-moz-appearance: textfield;
+	/* -moz-appearance: textfield; */
 }
 
 .select__wrapper:before {
