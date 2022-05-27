@@ -89,14 +89,14 @@ function countArea() {
 		if (input.value < 0) input.value = 0;
 
 		if (area > basisArea) {
-			prices[0].innerText = `${Math.ceil((basisArea * 10 + (area - basisArea) * basisArea / area * 10) * k2 * k4 / 10) * 10 - eng} BYN`;
-			prices[1].innerText = `${Math.ceil((basisArea * 16 + (area - basisArea) * basisArea / area * 16) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[0].innerText = `${Math.ceil((basisArea * 11 + (area - basisArea) * basisArea / area * 11) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[1].innerText = `${Math.ceil((basisArea * 17 + (area - basisArea) * basisArea / area * 17) * k2 * k4 / 10) * 10 - eng} BYN`;
 			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * basisArea / area * 42) * k2 * k4 / 10) * 10 - eng} BYN`;
 		} else if (area > 0) {
 			if (area < 60) area = 60;
-			prices[0].innerText = `${Math.ceil((basisArea * 10 + (area - basisArea) * area / basisArea * 10) * k2 * k4 / 10) * 10 - eng} BYN`;
-			prices[1].innerText = `${Math.ceil((basisArea * 16 + (area - basisArea) * area / basisArea * 16) * k2 * k4 / 10) * 10 - eng} BYN`;
-			prices[2].innerText = `${Math.ceil((basisArea * 40 + (area - basisArea) * area / basisArea * 40) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[0].innerText = `${Math.ceil((basisArea * 11 + (area - basisArea) * area / basisArea * 11) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[1].innerText = `${Math.ceil((basisArea * 17 + (area - basisArea) * area / basisArea * 17) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * area / basisArea * 42) * k2 * k4 / 10) * 10 - eng} BYN`;
 		} else {
 			prices[0].innerText = `0 BYN`;
 			prices[1].innerText = `0 BYN`;
@@ -104,9 +104,4 @@ function countArea() {
 		}
 
 	}
-
-	// household-block
-	// garage
-	// bath
-
 };
