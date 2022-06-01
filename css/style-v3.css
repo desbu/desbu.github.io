@@ -312,6 +312,7 @@ select[id=type] {
 	font-size: 18px;
 	border: 2px solid #f2b563;
 	background: white;
+	color: inherit;
 	cursor: pointer;
 	/* -moz-appearance: textfield; */
 }
@@ -338,6 +339,7 @@ input[type=number] {
 	height: 22px;
 	font-size: 18px;
 	border: 2px solid #f2b563;
+	border-radius: 0;
 	-moz-appearance: textfield;
 }
 
