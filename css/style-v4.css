@@ -412,7 +412,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-services__title {
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	
 }
 
@@ -433,7 +433,7 @@ input::-webkit-inner-spin-button {
 .list__item {
 	position: relative;
 	padding-left: 25px;
-	margin: 25px 0;
+	margin: 15px 0;
 	list-style: none;
 }
 
@@ -1150,7 +1150,7 @@ article .slider-dots {
 
 	.main-services__title {
 		font-size: 20px;
-		margin-bottom: 15px;
+		/* margin-bottom: 15px; */
 	}
 
 	.main-services__price {
@@ -1178,7 +1178,7 @@ article .slider-dots {
 	}
 
 	.list__item {
-		margin: 15px 0;
+		/* margin: 15px 0; */
 	}
 
 	.line {
