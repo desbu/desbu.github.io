@@ -86,10 +86,10 @@ function showSlides(id) {
 callMenu()
 
 function callMenu() {
-  let button = document.querySelector('.nav-button');
-  let links = document.querySelectorAll('.link');
+  let button = document.querySelector('.main-nav__button');
+  let links = document.querySelectorAll('.main-nav__item');
   let overlay = document.querySelector('.overlay');
-  let nav = document.querySelector('.main-nav');
+  let nav = document.querySelector('.main-nav__list');
 
 
   button.addEventListener('click', function () {
@@ -156,8 +156,8 @@ ShowHideMenu()
 
 function ShowHideMenu() {
   let scrollPos = 0;
-  let nav = document.querySelector('nav');
-  let button = document.querySelector('.nav-button');
+  let nav = document.querySelector('.main-nav');
+  let button = document.querySelector('.main-nav__button');
   window.addEventListener('scroll', function () {
     if ((document.body.getBoundingClientRect()).top > scrollPos + 15) {
       nav.style.top = '0px';
@@ -170,6 +170,3 @@ function ShowHideMenu() {
     }
   });
 }
-
-// Calculator
-

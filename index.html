@@ -24,7 +24,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style-v5.css">
+	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,47 +46,47 @@
 <body class="main-page">
 
 	<header id="top">
-		<nav>
-			<a class="nav-logo" href="#">
-				<h1><span class="hidden-logo" itemprop="name">MARCHUK.BY | </span>Строительные проекты</h1>
+		<nav class="main-nav">
+			<a class="main-nav__logo" href="#">
+				<h1>
+					<span class="hidden-logo" itemprop="name">MARCHUK.BY | </span>Строительные проекты
+				</h1>
 			</a>
-			<ul class="main-nav">
-				<li class="link"><a href="#">Главная</a></li>
-				<div class="line-nav"></div>
-				<li class="link"><a href="#about-us">О нас</a></li>
-				<li class="link"><a href="#services">Услуги</a></li>
-				<li class="link"><a href="#reviews">Отзывы</a></li>
-				<li class="link"><a href="#articles">Статьи</a></li>
-				<li class="link"><a href="#contacts">Контакты</a></li>
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="#">Главная</a></li>
+				<div class="main-nav__line"></div>
+				<li class="main-nav__item"><a href="#about-us">О нас</a></li>
+				<li class="main-nav__item"><a href="#services">Услуги</a></li>
+				<li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
+				<li class="main-nav__item"><a href="#articles">Статьи</a></li>
+				<li class="main-nav__item"><a href="#contacts">Контакты</a></li>
 			</ul>
-			<div class="nav-button">
+			<div class="main-nav__button">
 				<span></span>
 			</div>
 			<div class="overlay"></div>
 		</nav>
-		<div class="slider-features">
-			<ul class="nav-features">
-				<li class="item">
-					<h3>Качество</h3>
-					<p>мы действительно стараемся</p>
-					<a href="#about-us" class="button">Подробнее</a>
+
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<ul class="swiper-wrapper">
+				<!-- Slides -->
+				<li class="swiper-slide">
+					<img src="img/swiper/01.jpg" alt="">
 				</li>
-				<li class="item">
-					<h3>Выгода</h3>
-					<p>вы сами определяете состав проекта</p>
-					<a href="#services" class="button">Подробнее</a>
+				<li class="swiper-slide">
+					<img src="img/swiper/02.jpg" alt="">
 				</li>
-				<li class="item">
-					<h3>Ликбез</h3>
-					<p>объясним что к чему</p>
-					<a href="#articles" class="button">Подробнее</a>
-				</li>
-				<li class="item">
-					<h3>Общение</h3>
-					<p>с нами легко говорить</p>
-					<a href="#contacts" class="button">Связаться</a>
+				<li class="swiper-slide">
+					<img src="img/swiper/03.jpg" alt="">
 				</li>
 			</ul>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
 	</header>
 
@@ -94,7 +96,8 @@
 			<div class="wrapper">
 				<h2 class="title">О нас</h2>
 			</div>
-			<p>Мы&nbsp;&mdash; команда профессиональных инженеров, поможем точно и&nbsp;качественно реализовать задумку вашего будущего дома. Опыт, знание современных технологий строительства, актуальных методов
+			<p>Мы&nbsp;&mdash; команда профессиональных инженеров, поможем точно и&nbsp;качественно реализовать задумку
+				вашего будущего дома. Опыт, знание современных технологий строительства, актуальных методов
 				проектирования и&nbsp;расчета конструкций, внимание к&nbsp;деталям и&nbsp;увлечение собственным делом
 				определяют нашу исключительную конкурентоспособность на&nbsp;рынке проектных услуг.</p>
 			<p>Помимо разработки архитектурных и&nbsp;конструктивных решений, оказания <a href="#services">широкого
@@ -141,161 +144,174 @@
 			<div class="wrapper">
 				<h2 class="title">Услуги и цены</h2>
 			</div>
-				<div class="inputs">
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<!-- <label for="type">Объект:</label> -->
-							<div class="select__wrapper">
-								<select id="type">
-									<option value="house">Жилой дом</option>
-									<option value="garden-house">Садовый домик</option>
-									<option value="bath">Баня</option>
-									<option value="garage">Гараж</option>
-									<option value="household-block">Хозблок</option>
-								</select>
-							</div>
-						</div>
-					</div>
-					
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<label for="area">Площадь</label>
-							<input class="input" id="area" type="number" step="10" max="400" min="0" value="120">
-						</div>
-					</div>
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<input id="one" name="floors" type="radio" checked>
-							<label for="one">1 этаж</label>
-						</div>
-						<div class="inputs__item">
-							<input id="two" name="floors" type="radio">
-							<label for="two">2 этажа</label>
-						</div>
-						<!-- <div class="inputs__item">
-							<input id="three" name="floors" type="radio">
-							<label for="three">3 этажа</label>
-						</div> -->
-					</div>
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<input id="basement" type="checkbox">
-							<label for="basement">Подвал</label>
-						</div>
-					</div>
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<input id="with-house" type="checkbox">
-							<label for="with-house">Совместно с проектом дома</label>
-						</div>
-					</div>
-					<div class="inputs__block">
-						<div class="inputs__item">
-							<input id="construction" name="type" type="radio" checked>
-							<label for="construction">Строительство</label>
-						</div>
-						<div class="inputs__item">
-							<input id="reconstruction" name="type" type="radio">
-							<label for="reconstruction">Реконструкция</label>
+			<div class="inputs">
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<!-- <label for="type">Объект:</label> -->
+						<div class="select__wrapper">
+							<select id="type">
+								<option value="house">Жилой дом</option>
+								<option value="garden-house">Садовый домик</option>
+								<option value="bath">Баня</option>
+								<option value="garage">Гараж</option>
+								<option value="household-block">Хозблок</option>
+							</select>
 						</div>
 					</div>
 				</div>
-				<ul class="main-services">
-					<li class="main-services__item">
-						<h3 class="main-services__title">Базовый</h3>
-						<span class="main-services__price">900 BYN</span>
-						<ul class="list">
-							<li class="list__item check">
-								<h4 class="list__title">Архитектурные решения</h4>
-								<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Генеральный план</h4>
-								<p class="list__text">Проведение геодезических изысканий, размещение объектов строительства на&nbsp;земельном участке, благоустройство территории</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Инженерные изыскания</h4>
-								<p class="list__text">Исследование рельефа местности.</p>
-							</li>
-						</ul>
-						<span class="main-services__duration">3&nbsp;&mdash; 5&nbsp;недель</span>
-						<!-- <button class="main-services__button">Заказать</button> -->
-					</li>
-					<li class="main-services__item">
-						<h3 class="main-services__title">Расширенный</h3>
-						<span class="main-services__price">1400 BYN</span>
-						<ul class="list">
-							<li class="list__item check">
-								<h4 class="list__title">Архитектурные решения</h4>
-								<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Генеральный план</h4>
-								<p class="list__text">Размещение объектов строительства на&nbsp;земельном участке, благоустройство территории</p>
-							</li>
-							<li class="list__item plus">
-								<h4 class="list__title">Визуализация экстерьера</h4>
-								<p class="list__text">Создание фотореалистичных изображений объекта (4&nbsp;&mdash; 8&nbsp;картинок, летнее окружение)</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Инженерные изыскания</h4>
-								<p class="list__text">Исследование рельефа местности.</p>
-							</li>
-						</ul>
-						<span class="main-services__duration">6&nbsp;&mdash; 8&nbsp;недель</span>
-						<!-- <button class="main-services__button">Заказать</button> -->
-					</li>
-					<li class="main-services__item">
-						<h3 class="main-services__title">Полный</h3>
-						<span class="main-services__price">2100 BYN</span>
-						<ul class="list">
-							<li class="list__item check">
-								<h4 class="list__title">Архитектурные решения</h4>
-								<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Генеральный план</h4>
-								<p class="list__text">Размещение объектов строительства на&nbsp;земельном участке, благоустройство территории</p>
-							</li>
-							<li class="list__item plus">
-								<h4 class="list__title">Визуализация экстерьера</h4>
-								<p class="list__text">Создание фотореалистичных изображений объекта (12&nbsp;&mdash; 20&nbsp;картинок, летнее и&nbsp;зимнее окружения)</p>
-							</li>
-							<li class="list__item plus">
-								<h4 class="list__title">Конструктивные решения</h4>
-								<p class="list__text">Оценка воздействий, расчет и&nbsp;проектирование несущих конструкций, сравнение вариантов, изготовление рабочих и&nbsp;деталировочных чертежей</p>
-							</li>
-							<li class="list__item check">
-								<h4 class="list__title">Инженерные изыскания</h4>
-								<p class="list__text">Исследование рельефа местности и грунтовых условий площадки строительства.</p>
-							</li>
-						</ul>
-						<span class="main-services__duration">4&nbsp;&mdash; 6&nbsp;месяцев</span>
-						<!-- <button class="main-services__button">Заказать</button> -->
-					</li>
-				</ul>
-				<ul class="add-services">
-					<li class="add-services__item">
-						<details class="add-services__details" open>
-							<summary class="add-services__summary">
-								<p class="add-services__title">Расчёт пожарного разрыва</p>
-								<span class="add-services__price">500р</span>
-							</summary>
-							<p class="add-services__text">Расчёт по&nbsp;обеспечению (оценке) пожарной безопасности в&nbsp;рамках разработки генерального плана объекта</p>
-						</details>
-						<div class="line"></div>
-					</li>
-					<li class="add-services__item">
-						<details class="add-services__details">
-							<summary class="add-services__summary">
-								<p class="add-services__title">Проектно-сметная документация</p>
-								<span class="add-services__price">350р</span>
-							</summary>
-							<p class="add-services__text">Часть проектной документации, характеризующая объект в&nbsp;его денежном выражении. Содержит информацию о&nbsp;стоимости его возведения (стоимость и&nbsp;количество строительных материалов, затраты труда, стоимость работ)</p>
-						</details>
-						<div class="line"></div>
-					</li>
-					<!-- <li class="add-services__item">
+
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<label for="area">Площадь</label>
+						<input class="input" id="area" type="number" step="10" max="400" min="0" value="120">
+					</div>
+				</div>
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<input id="one" name="floors" type="radio" checked>
+						<label for="one">1 этаж</label>
+					</div>
+					<div class="inputs__item">
+						<input id="two" name="floors" type="radio">
+						<label for="two">2 этажа</label>
+					</div>
+					<!-- <div class="inputs__item">
+							<input id="three" name="floors" type="radio">
+							<label for="three">3 этажа</label>
+						</div> -->
+				</div>
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<input id="basement" type="checkbox">
+						<label for="basement">Подвал</label>
+					</div>
+				</div>
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<input id="with-house" type="checkbox">
+						<label for="with-house">Совместно с проектом дома</label>
+					</div>
+				</div>
+				<div class="inputs__block">
+					<div class="inputs__item">
+						<input id="construction" name="type" type="radio" checked>
+						<label for="construction">Строительство</label>
+					</div>
+					<div class="inputs__item">
+						<input id="reconstruction" name="type" type="radio">
+						<label for="reconstruction">Реконструкция</label>
+					</div>
+				</div>
+			</div>
+			<ul class="main-services">
+				<li class="main-services__item">
+					<h3 class="main-services__title">Базовый</h3>
+					<span class="main-services__price">900 BYN</span>
+					<ul class="list">
+						<li class="list__item check">
+							<h4 class="list__title">Архитектурные решения</h4>
+							<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных,
+								эксплуатационных и&nbsp;эстетических требований</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Генеральный план</h4>
+							<p class="list__text">Проведение геодезических изысканий, размещение объектов строительства
+								на&nbsp;земельном участке, благоустройство территории</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Инженерные изыскания</h4>
+							<p class="list__text">Исследование рельефа местности.</p>
+						</li>
+					</ul>
+					<span class="main-services__duration">3&nbsp;&mdash; 5&nbsp;недель</span>
+					<!-- <button class="main-services__button">Заказать</button> -->
+				</li>
+				<li class="main-services__item">
+					<h3 class="main-services__title">Расширенный</h3>
+					<span class="main-services__price">1400 BYN</span>
+					<ul class="list">
+						<li class="list__item check">
+							<h4 class="list__title">Архитектурные решения</h4>
+							<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных,
+								эксплуатационных и&nbsp;эстетических требований</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Генеральный план</h4>
+							<p class="list__text">Размещение объектов строительства на&nbsp;земельном участке,
+								благоустройство территории</p>
+						</li>
+						<li class="list__item plus">
+							<h4 class="list__title">Визуализация экстерьера</h4>
+							<p class="list__text">Создание фотореалистичных изображений объекта (4&nbsp;&mdash;
+								8&nbsp;картинок, летнее окружение)</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Инженерные изыскания</h4>
+							<p class="list__text">Исследование рельефа местности.</p>
+						</li>
+					</ul>
+					<span class="main-services__duration">6&nbsp;&mdash; 8&nbsp;недель</span>
+					<!-- <button class="main-services__button">Заказать</button> -->
+				</li>
+				<li class="main-services__item">
+					<h3 class="main-services__title">Полный</h3>
+					<span class="main-services__price">2100 BYN</span>
+					<ul class="list">
+						<li class="list__item check">
+							<h4 class="list__title">Архитектурные решения</h4>
+							<p class="list__text">Разработка архитектурной концепции дома с&nbsp;учетом функциональных,
+								эксплуатационных и&nbsp;эстетических требований</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Генеральный план</h4>
+							<p class="list__text">Размещение объектов строительства на&nbsp;земельном участке,
+								благоустройство территории</p>
+						</li>
+						<li class="list__item plus">
+							<h4 class="list__title">Визуализация экстерьера</h4>
+							<p class="list__text">Создание фотореалистичных изображений объекта (12&nbsp;&mdash;
+								20&nbsp;картинок, летнее и&nbsp;зимнее окружения)</p>
+						</li>
+						<li class="list__item plus">
+							<h4 class="list__title">Конструктивные решения</h4>
+							<p class="list__text">Оценка воздействий, расчет и&nbsp;проектирование несущих конструкций,
+								сравнение вариантов, изготовление рабочих и&nbsp;деталировочных чертежей</p>
+						</li>
+						<li class="list__item check">
+							<h4 class="list__title">Инженерные изыскания</h4>
+							<p class="list__text">Исследование рельефа местности и грунтовых условий площадки
+								строительства.</p>
+						</li>
+					</ul>
+					<span class="main-services__duration">4&nbsp;&mdash; 6&nbsp;месяцев</span>
+					<!-- <button class="main-services__button">Заказать</button> -->
+				</li>
+			</ul>
+			<ul class="add-services">
+				<li class="add-services__item">
+					<details class="add-services__details" open>
+						<summary class="add-services__summary">
+							<p class="add-services__title">Расчёт пожарного разрыва</p>
+							<span class="add-services__price">500р</span>
+						</summary>
+						<p class="add-services__text">Расчёт по&nbsp;обеспечению (оценке) пожарной безопасности
+							в&nbsp;рамках разработки генерального плана объекта</p>
+					</details>
+					<div class="line"></div>
+				</li>
+				<li class="add-services__item">
+					<details class="add-services__details">
+						<summary class="add-services__summary">
+							<p class="add-services__title">Проектно-сметная документация</p>
+							<span class="add-services__price">350р</span>
+						</summary>
+						<p class="add-services__text">Часть проектной документации, характеризующая объект в&nbsp;его
+							денежном выражении. Содержит информацию о&nbsp;стоимости его возведения (стоимость
+							и&nbsp;количество строительных материалов, затраты труда, стоимость работ)</p>
+					</details>
+					<div class="line"></div>
+				</li>
+				<!-- <li class="add-services__item">
 						<details class="add-services__details">
 							<summary class="add-services__summary">
 								<p class="add-services__title">Инженерно-геодезические изыскания</p>
@@ -305,7 +321,7 @@
 						</details>
 						<div class="line"></div>
 					</li> -->
-					<!-- <li class="add-services__item">
+				<!-- <li class="add-services__item">
 						<details class="add-services__details">
 							<summary class="add-services__summary">
 								<p class="add-services__title">Инженерно-геологические изыскания</p>
@@ -314,16 +330,18 @@
 							<p class="add-services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id modi, et quis qui tempora saepe, facere expedita deserunt blanditiis in explicabo iure error quae ratione quisquam, voluptas earum! Repudiandae sed eligendi libero aut temporibus omnis, illo odio quaerat et. Id rem error eligendi aperiam numquam.</p>
 						</details>
 					</li> -->
-					<li class="add-services__item">
-						<details class="add-services__details">
-							<summary class="add-services__summary">
-								<p class="add-services__title">Авторский надзор</p>
-								<span class="add-services__price">80р/выезд</span>
-							</summary>
-							<p class="add-services__text">Осуществление надзора за&nbsp;возведением объекта, оценка соответствия возводимых конструкций и&nbsp;технико-экономических показателей проектным решениям и&nbsp;значениям</p>
-						</details>
-					</li>
-				</ul>
+				<li class="add-services__item">
+					<details class="add-services__details">
+						<summary class="add-services__summary">
+							<p class="add-services__title">Авторский надзор</p>
+							<span class="add-services__price">80р/выезд</span>
+						</summary>
+						<p class="add-services__text">Осуществление надзора за&nbsp;возведением объекта, оценка
+							соответствия возводимых конструкций и&nbsp;технико-экономических показателей проектным
+							решениям и&nbsp;значениям</p>
+					</details>
+				</li>
+			</ul>
 		</section>
 
 		<section id="reviews">
@@ -343,7 +361,9 @@
 					<a href="articles/a1.html">
 						<h3>Хотим свой дом! С чего начать? (1&nbsp;часть)</h3>
 						<img src="articles/a1.jpg" loading="lazy" alt="Свой уютный дом">
-						<p class="articles__paragraph">В&nbsp;этой части цикла статей мы&nbsp;расскажем вам куда обращаться, для получения/приобретения земельного участка и&nbsp;о&nbsp;необходимой документации для получения разрешения на&nbsp;проектирование ...</p>
+						<p class="articles__paragraph">В&nbsp;этой части цикла статей мы&nbsp;расскажем вам куда
+							обращаться, для получения/приобретения земельного участка и&nbsp;о&nbsp;необходимой
+							документации для получения разрешения на&nbsp;проектирование ...</p>
 					</a>
 				</li>
 				<li class="articles__item">
@@ -392,7 +412,10 @@
 
 	<footer class="footer" id="contacts">
 		<div class="footer__map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus" width="100%" height="504" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus"
+				width="100%" height="504" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 		<!-- <div class="footer__map" id="map"></div> -->
 		<div class="footer__content">
@@ -404,7 +427,7 @@
 					<!-- <p class="footer__line">в субботу с 12 до 18</p> -->
 					<p class="footer__line">обед с 14 до 15</p>
 				</div>
-				
+
 				<p class="footer__name">ИП Марчук И.Н. УНП 291498554</p>
 			</div>
 			<div class="footer__logo">
@@ -428,7 +451,8 @@
 				<div class="footer__live">
 					<a class="footer__link footer__link--phone" href="tel:+375292468681">+375 29 246-86-81</a>
 					<div class="footer__wrapper">
-						<a class="footer__link footer__link--address" href="https://www.google.com/maps?cid=6791659934894024284&hl=ru">Брест,
+						<a class="footer__link footer__link--address"
+							href="https://www.google.com/maps?cid=6791659934894024284&hl=ru">Брест,
 							ул. Красногвардейская 112Д</a>
 						<a class="footer__link footer__link--mail" href="mailto:info@marchuk.by">info@marchuk.by</a>
 					</div>
@@ -501,16 +525,13 @@
 
 	<script src="js/script.js"></script>
 	<script src="js/calculator.js"></script>
-	<!-- <script src="js/map.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/swiper.js"></script>
 
 	<script>
 		shiftSlide();
 		countArea();
 	</script>
-
-	<!-- <script async
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzxc8p8t7S6GY10YyxQaU1hLeOTgcfoJQ&callback=initMap">
-	</script> -->
 
 	<script type="application/ld+json">
 		{
