@@ -28,7 +28,12 @@ input[type="radio"].visually-hidden {
 
 .swiper-wrapper {
 	margin: 0;
+	height: 100vh;
 	padding: 0;
+}
+
+.swiper-wrapper img {
+	height: 100%;
 }
 
 .swiper-pagination-bullet-active {
@@ -39,6 +44,7 @@ input[type="radio"].visually-hidden {
 .swiper-button-next {
 	display: none;
 }
+
 
 
 html,
@@ -61,7 +67,7 @@ body {
 .main-page {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
-	grid-template-rows: 100vh;;
+	/* grid-template-rows: 100vh; */
 
 }
 
@@ -975,12 +981,12 @@ article .slider-dots {
 	}
 
 	.main-page {
-		grid-template-rows: 400px;
+		/* grid-template-rows: 400px; */
 	}
 
 	.main-page header {
-		grid-template-rows: repeat(2, 200px);
-		background: #5a89aa url("../img/header.jpg") no-repeat;
+		/* grid-template-rows: 100; */
+		/* background: #5a89aa url("../img/header.jpg") no-repeat; */
 	}
 
 	.main-nav {
