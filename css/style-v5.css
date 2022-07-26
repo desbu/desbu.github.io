@@ -22,6 +22,8 @@ input[type="radio"].visually-hidden {
 	overflow: hidden;
 }
 
+
+
 .swiper {
 	height: 100%;
 }
@@ -30,6 +32,51 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	height: 100vh;
 	padding: 0;
+}
+
+.swiper-title {
+	margin: 0;
+	font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.swiper-info {
+	position: absolute;
+	bottom: 50vh;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1140px;
+	transform: translateY(50%);
+	/* height: 86px; */
+	/* font-size: 48px; */
+	/* font-weight: 500; */
+	z-index: 10;
+	color: white;
+}
+
+.swiper-link {
+	padding: 12px 30px 13px 30px;
+	border: 2px solid #f2b563;
+    border-radius: 50px;
+    /* background-color: #f2b563; */
+	text-decoration: none;
+	color: white;
+	box-sizing: border-box;
+	transition: 0.4s;
+}
+
+.swiper-text {
+	font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    margin: 0 0 50px 0;
+}
+
+.swiper-link:hover {
+    background-color: #f2b563;
 }
 
 .swiper-wrapper img {
