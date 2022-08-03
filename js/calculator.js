@@ -39,7 +39,7 @@ function countArea() {
 		}
 
 		const basisArea = 180;
-		const eng = select.value == 'house' ? 0 : 400;
+		const eng = select.value == 'house' ? 0 : 1400;
 
 		// console.log(eng);
 
