@@ -18,6 +18,8 @@ function countArea() {
 	let k2 = checkboxBasement.checked ? 1.3 : 1;
 	let k3 = radioConstruction.checked ? 1 : 1.3;
 
+	// Жилой дом или саловый домик
+
 	if (select.value == 'house' || select.value == 'garden-house') {
 
 		document.querySelector('.inputs__block:nth-of-type(3)').style.display = "flex";
@@ -39,7 +41,7 @@ function countArea() {
 		}
 
 		const basisArea = 180;
-		const eng = select.value == 'house' ? 0 : 1400;
+		const eng = select.value == 'house' ? 0 : 400;
 
 		// console.log(eng);
 
@@ -49,17 +51,19 @@ function countArea() {
 		if (area > basisArea) {
 			prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * basisArea / area * 8) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
 			prices[1].innerText = `${Math.ceil((basisArea * 13 + (area - basisArea) * basisArea / area * 13) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
-			prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
+			prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * basisArea / area * 38) * k1 * k2 * k3 / 10) * 10 - eng + 1000} BYN`;
 		} else if (area > 0) {
 			if (area < 90) area = 90;
 			prices[0].innerText = `${Math.ceil((basisArea * 8 + (area - basisArea) * area / basisArea * 8) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
 			prices[1].innerText = `${Math.ceil((basisArea * 13 + (area - basisArea) * area / basisArea * 13) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
-			prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * area / basisArea * 38) * k1 * k2 * k3 / 10) * 10 - eng} BYN`;
+			prices[2].innerText = `${Math.ceil((basisArea * 38 + (area - basisArea) * area / basisArea * 38) * k1 * k2 * k3 / 10) * 10 - eng + 1000} BYN`;
 		} else {
 			prices[0].innerText = `0 BYN`;
 			prices[1].innerText = `0 BYN`;
 			prices[2].innerText = `0 BYN`;
 		}
+
+	// Баня, гараж, хозблок
 
 	} else {
 
@@ -91,12 +95,12 @@ function countArea() {
 		if (area > basisArea) {
 			prices[0].innerText = `${Math.ceil((basisArea * 11 + (area - basisArea) * basisArea / area * 11) * k2 * k4 / 10) * 10 - eng} BYN`;
 			prices[1].innerText = `${Math.ceil((basisArea * 17 + (area - basisArea) * basisArea / area * 17) * k2 * k4 / 10) * 10 - eng} BYN`;
-			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * basisArea / area * 42) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * basisArea / area * 42) * k2 * k4 / 10) * 10 - eng + 1000} BYN`;
 		} else if (area > 0) {
 			if (area < 60) area = 60;
 			prices[0].innerText = `${Math.ceil((basisArea * 11 + (area - basisArea) * area / basisArea * 11) * k2 * k4 / 10) * 10 - eng} BYN`;
 			prices[1].innerText = `${Math.ceil((basisArea * 17 + (area - basisArea) * area / basisArea * 17) * k2 * k4 / 10) * 10 - eng} BYN`;
-			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * area / basisArea * 42) * k2 * k4 / 10) * 10 - eng} BYN`;
+			prices[2].innerText = `${Math.ceil((basisArea * 42 + (area - basisArea) * area / basisArea * 42) * k2 * k4 / 10) * 10 - eng + 1000} BYN`;
 		} else {
 			prices[0].innerText = `0 BYN`;
 			prices[1].innerText = `0 BYN`;
