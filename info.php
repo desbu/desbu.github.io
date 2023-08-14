@@ -9,5 +9,9 @@ $ch = curl_init();
 curl_setopt ($ch, CURLOPT_URL, $url);
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $result = curl_exec ($ch);
+$res = json_decode($result,true);
+$reviews = $res['result']['reviews'];
+
+echo json_encode($reviews);
 
 ?>
