@@ -9,8 +9,11 @@ $ch = curl_init();
 curl_setopt ($ch, CURLOPT_URL, $url);
 curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
 $result = curl_exec ($ch);
+echo print_r($result);
 $res = json_decode($result,true);
+echo print_r($res);
 $reviews = $res['result']['reviews'];
+echo print_r($reviews);
 
 echo json_encode($reviews);
 
