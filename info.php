@@ -1,20 +1,28 @@
 <?php
 
-$api_key = 'AIzaSyBhK7mm-ALShJfQPLvmRepTEXtZf_B00zk';
-$place_id = 'ChIJqz8fdX4PIUcRXGacHrrSQF4';
+if (isset($_POST)) {
 
-$url = "https://maps.googleapis.com/maps/api/place/details/json?placeid={$place_id}&fields=name,rating,formatted_phone_number,reviews&key={$api_key}"; 
+    $api_key = 'AIzaSyBhK7mm-ALShJfQPLvmRepTEXtZf_B00zk';
+    $place_id = 'ChIJqz8fdX4PIUcRXGacHrrSQF4';
 
-$ch = curl_init();
-curl_setopt ($ch, CURLOPT_URL, $url);
-curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-$result = curl_exec ($ch);
-echo print_r($result);
-$res = json_decode($result,true);
-echo print_r($res);
-$reviews = $res['result']['reviews'];
-echo print_r($reviews);
+    $url = "https://maps.googleapis.com/maps/api/place/details/json?placeid={$place_id}&fields=name,rating,formatted_phone_number,reviews&key={$api_key}";
+//    $url = "https://maps.googleapis.com/maps/api/place/details/json?placeid={$place_id}&key={$api_key}";
+//    $url = "https://maps.googleapis.com/maps/api/place/details/json?key={$api_key}&placeid={$place_id}";
 
-echo json_encode($reviews);
+    $accountId = '992351312629723823';
+    $locationId = 'ChIJqz8fdX4PIUcRXGacHrrSQF4';
 
-?>
+//    $url = "https://mybusiness.googleapis.com/v4/accounts/{$accountId}/locations/{$locationId}/reviews";
+//    $url = "https://mybusiness.googleapis.com/v4/accounts/{$accountId}/locations/{$locationId}/reviews";
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    $result = curl_exec($ch);
+    $res = json_decode($result, true);
+
+
+    $reviews = $res['result']['reviews'];
+
+    echo json_encode($reviews);
+} ?>
