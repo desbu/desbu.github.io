@@ -27,9 +27,9 @@ function countArea() {
         document.querySelector('.inputs__block:nth-of-type(6)').style.display = "flex";
 
         if (select.value == 'house') {
-            document.querySelectorAll('.main-services__item:not(:last-of-type) .list__item:nth-of-type(2)')
+            document.querySelectorAll('.list__item:nth-of-type(2)')
                 .forEach(item => item.style.display = "block");
-            document.querySelectorAll('.main-services__item:not(:last-of-type) .list__item:last-of-type')
+            document.querySelectorAll('.list__item:last-of-type')
                 .forEach(item => item.style.display = "block");
         }
 
@@ -38,6 +38,12 @@ function countArea() {
                 .forEach(item => item.style.display = "none");
             document.querySelectorAll('.main-services__item:not(:last-of-type) .list__item:last-of-type')
                 .forEach(item => item.style.display = "none");
+
+            // Восстановление видимости "Геральный план" и "Инженерные изыскания"
+            document.querySelectorAll('.main-services__item:last-of-type .list__item:nth-of-type(2)')
+                .forEach(item => item.style.display = "block");
+            document.querySelectorAll('.main-services__item:last-of-type .list__item:last-of-type')
+                .forEach(item => item.style.display = "block");
         }
 
         const basisArea = 180;
@@ -85,6 +91,7 @@ function countArea() {
 
         const basisArea = 60;
         const eng = checkboxWithHouse.checked ? 500 : 0;
+        console.log(eng)
         const k4 = select.value == 'bath' ? 1.3 : select.value == 'garage' ? 1.15 : 1;
 
         if (input.value > 200) input.value = 200;
