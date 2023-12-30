@@ -788,7 +788,7 @@ article .slider-dots {
 
 .footer__map iframe {
 	width: 100%;
-	height: calc(100vh - 394px);
+	height: calc(100vh - 355px);
 }
 
 .footer__content {
@@ -825,8 +825,8 @@ article .slider-dots {
 }
 
 .footer__text {
-	margin: 25px 0 50px;
-	height: 111px;
+	margin: 25px 0 35px;
+	height: 87px;
 }
 
 .footer__line {
@@ -876,8 +876,8 @@ article .slider-dots {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	margin: 25px 0 50px;
-	height: 111px;
+	margin: 25px 0 35px;
+	height: 87px;
 }
 
 .footer__socials {
