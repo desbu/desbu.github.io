@@ -3,17 +3,11 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1140px 1fr;
-    /* min-height: 200px; */
     margin-top: 100px;
     height: 100vh;
     background: #323232;
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
     z-index: 1;
-}
-
-#map {
-    height: 470px;
-    width: 100%;
 }
 
 .ymaps-glass-pane {
@@ -36,7 +30,7 @@
 
 .footer__map iframe {
     width: 100%;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 290px);
 }
 
 .footer__content {
