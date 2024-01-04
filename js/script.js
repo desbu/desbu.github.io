@@ -170,15 +170,3 @@ function ShowHideMenu() {
     }
   });
 }
-
-console.log('functions');
-
-window.onload = function() {
-  document.querySelector(`a[href*="elfsight"]`).style.display = 'none';
-  console.log('window');
-}
-
-document.onload = function() {
-  document.querySelector(`a[href*="elfsight"]`).style.display = 'none';
-  console.log('document');
-}
