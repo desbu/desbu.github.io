@@ -774,7 +774,7 @@ article .slider-dots {
 		height: 50px;
 		padding-left: 10px;
 		background: #323232;
-		z-index: 2;
+		z-index: 10;
 		transition: top ease .5s;
 	}
 
