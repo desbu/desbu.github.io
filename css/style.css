@@ -2,6 +2,11 @@
 
 @import url("footer.css");
 
+:root {
+    --highlight-color: #f2b563;
+    --text-color: #323232;
+}
+
 *:focus {
     outline: none;
 }
@@ -20,7 +25,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    color: #323232;
+    color: var(--text-color);
 }
 
 .main-page {
@@ -67,7 +72,7 @@ input[type="radio"].visually-hidden {
     display: grid;
     grid-template-columns: 1fr 1140px 1fr;
     grid-column: 1/-1;
-    color: #323232;
+    color: var(--text-color);
 }
 
 main {
@@ -97,7 +102,7 @@ nav h1 {
 }
 
 .secondary-page .nav-logo {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .main-nav {
@@ -129,11 +134,11 @@ nav h1 {
 }
 
 .secondary-page .main-nav a {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .main-nav a:hover {
-    color: #f2b563;
+    color: var(--highlight-color);
 }
 
 .slider-features {
@@ -176,7 +181,7 @@ nav h1 {
     margin-left: 400px;
     padding: 12px 30px 13px 30px;
     border-radius: 5px;
-    background-color: #f2b563;
+    background-color: var(--highlight-color);
     font-size: 18px;
     font-weight: 400;
     line-height: 36px;
@@ -196,7 +201,7 @@ nav h1 {
     font-size: 24px;
     font-weight: 500;
     text-align: center;
-    border-bottom: 3px solid #f2b563;
+    border-bottom: 3px solid var(--highlight-color);
 }
 
 .about-us .team {
@@ -243,7 +248,7 @@ nav h1 {
 
 .about-us a,
 .about-us a:active {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .services .bg {
@@ -285,26 +290,26 @@ label {
     cursor: pointer;
     line-height: 22px;
     transition: all 0.2s ease-in-out;
-    border-top: 2px solid #f2b563;
-    border-right: 1px solid #f2b563;
-    border-bottom: 2px solid #f2b563;
-    border-left: 1px solid #f2b563;
+    border-top: 2px solid var(--highlight-color);
+    border-right: 1px solid var(--highlight-color);
+    border-bottom: 2px solid var(--highlight-color);
+    border-left: 1px solid var(--highlight-color);
     box-shadow: 0px 0px 4px 0px rgb(128 128 128 / 20%);
 }
 
 .inputs__item:first-of-type label {
-    border-left: 2px solid #f2b563;
+    border-left: 2px solid var(--highlight-color);
 }
 
 .inputs__item:last-of-type label {
-    border-right: 2px solid #f2b563;
+    border-right: 2px solid var(--highlight-color);
 }
 
 label[for=type],
 label[for=area],
 input[type="radio"]:checked + label,
 input[type="checkbox"]:checked + label {
-    background: #f2b563;
+    background: var(--highlight-color);
     color: white;
 }
 
@@ -312,7 +317,7 @@ select[id=type] {
     position: relative;
     padding: 10px 38px 10px 19px;
     font-size: 18px;
-    border: 2px solid #f2b563;
+    border: 2px solid var(--highlight-color);
     background: white;
     color: inherit;
     cursor: pointer;
@@ -339,7 +344,7 @@ input[type=number] {
     width: 31px;
     height: 22px;
     font-size: 18px;
-    border: 2px solid #f2b563;
+    border: 2px solid var(--highlight-color);
     border-radius: 0;
     -moz-appearance: textfield;
 }
@@ -401,7 +406,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-services__item:nth-of-type(2) {
-    box-shadow: 0px 0px 0px 2px #f2b563 inset;
+    box-shadow: 0px 0px 0px 2px var(--highlight-color) inset;
 }
 
 .main-services__item:hover {
@@ -421,7 +426,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-services__price {
-    color: #f2b563;
+    color: var(--highlight-color);
 }
 
 .main-services__duration {
@@ -451,7 +456,7 @@ input::-webkit-inner-spin-button {
     height: 9px;
     border-width: 0 2px 2px 0;
     border-style: solid;
-    border-color: #f2b563;
+    border-color: var(--highlight-color);
     transform-origin: bottom left;
     transform: rotate(45deg);
 }
@@ -465,7 +470,7 @@ input::-webkit-inner-spin-button {
     width: 10px;
     border-width: 0 2px 2px 0;
     border-style: solid;
-    border-color: #f2b563;
+    border-color: var(--highlight-color);
     transform-origin: bottom left;
 }
 
@@ -478,7 +483,7 @@ input::-webkit-inner-spin-button {
     width: 10px;
     border-width: 0 2px 2px 0;
     border-style: solid;
-    border-color: #f2b563;
+    border-color: var(--highlight-color);
     transform-origin: bottom left;
     transform: rotate(90deg);
 }
@@ -498,7 +503,7 @@ input::-webkit-inner-spin-button {
 
 .main-services__button {
     padding: 10px 50px;
-    border: 2px solid #f2b563;
+    border: 2px solid var(--highlight-color);
     border-radius: 5px;
     background: none;
     cursor: pointer;
@@ -506,7 +511,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-services__button:hover {
-    background: #f2b563;
+    background: var(--highlight-color);
 }
 
 .add-services {
@@ -566,12 +571,12 @@ details[open] summary:before {
 }
 
 .add-services__summary:hover {
-    color: #f2b563;
+    color: var(--highlight-color);
 }
 
 .line {
     margin: 35px 0;
-    border-bottom: 1px solid #323232;
+    border-bottom: 1px solid var(--text-color);
     opacity: 0.2;
 }
 
@@ -589,7 +594,7 @@ details[open] summary:before {
 
 .articles a {
     text-decoration: none;
-    color: #323232;
+    color: var(--text-color);
 }
 
 .articles h3 {
@@ -776,7 +781,7 @@ article .slider-dots {
         width: 100vw;
         height: 50px;
         padding-left: 10px;
-        background: #323232;
+        background: var(--text-color);
         z-index: 10;
         transition: top ease .5s;
     }
@@ -814,7 +819,7 @@ article .slider-dots {
         height: 100vh;
         padding-top: 50px;
         flex-direction: column;
-        background: #323232;
+        background: var(--text-color);
         transform: translateX(-71vw);
         z-index: 5;
         transition: transform ease .3s;

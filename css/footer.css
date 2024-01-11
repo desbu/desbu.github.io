@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1140px 1fr;
     margin-top: 100px;
     height: 100vh;
-    background: #323232;
+    background: var(--text-color);
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
     z-index: 1;
 }
