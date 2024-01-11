@@ -30,7 +30,7 @@
 
 .footer__map iframe {
     width: 100%;
-    height: calc(100vh - 290px);
+    height: calc(100vh - 291px);
 }
 
 .footer__content {
@@ -153,7 +153,7 @@
 
     .footer__map iframe {
         width: 100%;
-        height: calc(100vh - 392px);
+        height: calc(100vh - 393px);
     }
 
     .footer__content {
