@@ -193,7 +193,6 @@ nav h1 {
 
 .wrapper {
     display: flex;
-    /* flex-grow: 1; */
 }
 
 .title {
@@ -244,7 +243,7 @@ nav h1 {
 
 .about-us p:last-of-type {
     margin-top: 12px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .about-us a,
@@ -322,7 +321,6 @@ select[id=type] {
     background: white;
     color: inherit;
     cursor: pointer;
-    /* -moz-appearance: textfield; */
 }
 
 .select__wrapper:before {
@@ -725,7 +723,6 @@ article .slider-dots {
     .nav-features .item {
         width: 500px;
     }
-
 
     .title {
         margin: 34px auto;
