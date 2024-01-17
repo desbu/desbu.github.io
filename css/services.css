@@ -233,7 +233,8 @@ details[open] summary:before {
         content: none;
     }
 
-    .add-services__text {
+    .add-services__text,
+    .add-services__description {
         padding: 0;
     }
 
