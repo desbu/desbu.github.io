@@ -178,8 +178,14 @@ details[open] summary:before {
     cursor: pointer;
 }
 
-.add-services__text {
+.add-services__text,
+.add-services__description {
     padding: 0 150px 0 50px;
+}
+
+.add-services__description {
+    font-style: italic;
+    color: #969696;
 }
 
 .add-services__summary:hover {
