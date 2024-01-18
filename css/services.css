@@ -180,7 +180,7 @@ details[open] summary:before {
 
 .add-services__text,
 .add-services__description {
-    padding: 0 150px 0 50px;
+    padding-left: 50px;
 }
 
 .add-services__description {
