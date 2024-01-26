@@ -33,8 +33,23 @@
 }
 
 .main-services__title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
     margin-bottom: 20px;
+}
 
+.main-services__example {
+    display: flex;
+}
+
+.main-services__example svg {
+    fill: var(--text-color);
+    transition: fill 0.2s ease-in-out;
+}
+
+.main-services__example:hover svg {
+    fill: var(--highlight-color);
 }
 
 .main-services__price {
