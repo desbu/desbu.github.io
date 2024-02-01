@@ -13,7 +13,7 @@ input.addEventListener('input', countArea);
 radios.forEach(item => item.addEventListener('change', countArea));
 
 function countArea() {
-    let area = input.value;
+    let area;
     let k1 = radioOne.checked ? 1 : radioTwo.checked ? 1.25 : 1.3;
     let k2 = checkboxBasement.checked ? 1.3 : 1;
     let k3 = radioConstruction.checked ? 1 : 1.3;
@@ -51,6 +51,8 @@ function countArea() {
 
         if (input.value > 400) input.value = 400;
         if (input.value < 0) input.value = 0;
+
+        area = input.value;
 
         if (area > basisArea) {
             prices[0].innerText = `${Math.ceil(((basisArea * 8 + (area - basisArea) * basisArea / area * 8) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
@@ -91,11 +93,12 @@ function countArea() {
 
         const basisArea = 60;
         const eng = checkboxWithHouse.checked ? 500 : 0;
-        console.log(eng)
         const k4 = select.value == 'bath' ? 1.3 : select.value == 'garage' ? 1.15 : 1;
 
         if (input.value > 200) input.value = 200;
         if (input.value < 0) input.value = 0;
+
+        area = input.value;
 
         if (area > basisArea) {
             prices[0].innerText = `${Math.ceil((basisArea * 11 + (area - basisArea) * basisArea / area * 11) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng} BYN`;
@@ -111,6 +114,5 @@ function countArea() {
             prices[1].innerText = `0 BYN`;
             prices[2].innerText = `0 BYN`;
         }
-
     }
 };
