@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
     grid-template-columns: 1fr 1140px 1fr;
     grid-template-rows: minmax(300px, auto) minmax(400px, auto);
     grid-column: 1/-1;
-    background: #5a89aa url("../img/header.jpg") no-repeat 0 -100px;
+    background: #5a89aa url("../img/header.webp") no-repeat 0 -100px;
     background-size: cover;
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
 }
@@ -579,7 +579,7 @@ article .slider-dots {
 
     .main-page header {
         grid-template-rows: repeat(2, 200px);
-        background: #5a89aa url("../img/header.jpg") no-repeat;
+        background: #5a89aa url("../img/header.webp") no-repeat;
     }
 
     nav {
