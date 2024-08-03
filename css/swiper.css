@@ -1,0 +1,17 @@
+.swiper {
+    --swiper-pagination-bullet-inactive-color: white;
+    /*--swiper-pagination-bullet-inactive-opacity: .5;*/
+    --swiper-pagination-color: var(--highlight-color);
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
+.swiper {
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

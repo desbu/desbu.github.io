@@ -1,0 +1,120 @@
+.main-page header {
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100vh;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1140px 1fr;*/
+    /*grid-template-rows: 100vh minmax(400px, auto);*/
+    background: #5a89aa;
+    /*background: #5a89aa url("../img/header.webp") no-repeat 0 -100px;*/
+    background-size: cover;
+    box-shadow: 0 0 4px 0 rgba(128, 128, 128, 0.4);
+}
+
+.secondary-page header {
+    display: grid;
+    grid-template-columns: 1fr 1140px 1fr;
+    grid-column: 1/-1;
+    color: var(--text-color);
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 1140px;
+    /*grid-column: 2/3;*/
+    /*height: 36px;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*margin-bottom: 50px;*/
+    z-index: 100;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.nav-logo {
+    align-self: flex-end;
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-page .nav-logo {
+    color: var(--text-color);
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav li {
+    align-self: flex-end;
+    margin-left: 40px;
+}
+
+.main-nav li:first-of-type,
+.nav-button,
+.overlay {
+    display: none;
+}
+
+.main-nav a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.secondary-page .main-nav a {
+    color: var(--text-color);
+}
+
+.main-nav a:hover {
+    color: var(--highlight-color);
+}
+
+
+.instagram {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: white;
+    /*opacity: .75;*/
+    z-index: 10;
+    transition: color 0.2s ease-in-out;
+}
+
+.instagram:hover {
+    color: var(--highlight-color);
+}
+
+.instagram path {
+    fill: white;
+    transition: fill 0.2s ease-in-out;
+}
+
+.instagram:hover path {
+    fill: var(--highlight-color);
+}
