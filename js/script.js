@@ -39,8 +39,6 @@ function showSlides(id) {
     })
   }
 
-  // updateInterval()
-
   function updateInterval() {
     clearInterval(interval);
     interval = setInterval(function () {
@@ -87,9 +85,9 @@ callMenu()
 
 function callMenu() {
   let button = document.querySelector('.nav-button');
-  let links = document.querySelectorAll('.link');
+  let links = document.querySelectorAll('.header__link');
   let overlay = document.querySelector('.overlay');
-  let nav = document.querySelector('.main-nav');
+  let nav = document.querySelector('.header__links');
 
 
   button.addEventListener('click', function () {

@@ -450,42 +450,11 @@ article .slider-dots {
 
 @media (max-width: 1200px) {
     .main-page,
-    .main-page header,
     .secondary-page,
-    .secondary-page header,
     footer {
         grid-template-columns: 10px 1fr 10px;
     }
 
-    .main-page {
-        grid-template-rows: 400px;
-    }
-
-    .main-page header {
-        grid-template-rows: repeat(2, 200px);
-        background: #5a89aa url("../img/header.webp") no-repeat;
-    }
-
-    nav {
-        position: fixed;
-        width: 100vw;
-        height: 50px;
-        padding-left: 10px;
-        background: var(--text-color);
-        z-index: 10;
-        transition: top ease .5s;
-    }
-
-    nav.active {
-        top: -50px;
-    }
-
-    nav h1 {
-        margin: 0;
-        font-size: 20px;
-        line-height: 50px;
-        color: white;
-    }
 
     .overlay {
         position: fixed;
@@ -502,99 +471,7 @@ article .slider-dots {
         display: block;
     }
 
-    .main-nav {
-        position: fixed;
-        left: 0;
-        width: 70vw;
-        height: 100vh;
-        padding-top: 50px;
-        flex-direction: column;
-        background: var(--text-color);
-        transform: translateX(-71vw);
-        z-index: 5;
-        transition: transform ease .3s;
-    }
 
-    .main-nav.active {
-        transform: translateX(0);
-    }
-
-    .main-nav li:first-of-type,
-    .nav-button {
-        display: block;
-    }
-
-    .main-nav li {
-        margin: 0;
-        padding: 0;
-        align-self: auto;
-    }
-
-    .main-nav a {
-        display: block;
-        padding-left: 30px;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        text-transform: uppercase;
-    }
-
-    .secondary-page .main-nav a {
-        color: white;
-    }
-
-    .line-nav {
-        margin: 5px 30px;
-    }
-
-    .nav-button {
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        transition: ease .5s;
-    }
-
-    .nav-button span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 25px;
-        height: 3px;
-        transform: translate(-50%, -50%);
-        background-color: white;
-    }
-
-    .nav-button span::before,
-    .nav-button span::after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        transition: transform ease .3s;
-    }
-
-    .nav-button span::before {
-        transform: translateY(7px);
-    }
-
-    .nav-button span::after {
-        transform: translateY(-7px);
-    }
-
-    .nav-button.active span {
-        background-color: transparent;
-    }
-
-    .nav-button.active span::before {
-        transform: rotate(-45deg);
-    }
-
-    .nav-button.active span::after {
-        bottom: 0;
-        transform: rotate(45deg);
-    }
 
     .overflow {
         overflow: hidden;
