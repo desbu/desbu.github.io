@@ -57,12 +57,12 @@ function countArea() {
         if (area > basisArea) {
             prices[0].innerText = `${Math.ceil(((basisArea * 9.9 + (area - basisArea) * basisArea / area * 9.9) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
             prices[1].innerText = `${Math.ceil(((basisArea * 15 + (area - basisArea) * basisArea / area * 15) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
-            prices[2].innerText = `${Math.ceil(((basisArea * 44 + (area - basisArea) * basisArea / area * 44) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + 1000} BYN`;
+            prices[2].innerText = `${Math.ceil(((basisArea * 47 + (area - basisArea) * basisArea / area * 47) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + 1000} BYN`;
         } else if (area > 0) {
             if (area < 90) area = 90;
             prices[0].innerText = `${Math.ceil(((basisArea * 9.9 + (area - basisArea) * area / basisArea * 9.9) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
             prices[1].innerText = `${Math.ceil(((basisArea * 15 + (area - basisArea) * area / basisArea * 15) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
-            prices[2].innerText = `${Math.ceil(((basisArea * 44 + (area - basisArea) * area / basisArea * 44) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + 1000} BYN`;
+            prices[2].innerText = `${Math.ceil(((basisArea * 47 + (area - basisArea) * area / basisArea * 47) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + 1000} BYN`;
         } else {
             prices[0].innerText = `0 BYN`;
             prices[1].innerText = `0 BYN`;
@@ -103,12 +103,12 @@ function countArea() {
         if (area > basisArea) {
             prices[0].innerText = `${Math.ceil((basisArea * 13.2 + (area - basisArea) * basisArea / area * 13.2) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng} BYN`;
             prices[1].innerText = `${Math.ceil((basisArea * 19.2 + (area - basisArea) * basisArea / area * 19.2) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng} BYN`;
-            prices[2].innerText = `${Math.ceil((basisArea * 48.5 + (area - basisArea) * basisArea / area * 48.5) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng + 1000} BYN`;
+            prices[2].innerText = `${Math.ceil((basisArea * 51.9 + (area - basisArea) * basisArea / area * 51.9) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng + 1000} BYN`;
         } else if (area > 0) {
             if (area < 60) area = 60;
             prices[0].innerText = `${Math.ceil((basisArea * 13.2 + (area - basisArea) * area / basisArea * 13.2) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng} BYN`;
             prices[1].innerText = `${Math.ceil((basisArea * 19.2 + (area - basisArea) * area / basisArea * 19.2) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng} BYN`;
-            prices[2].innerText = `${Math.ceil((basisArea * 48.5 + (area - basisArea) * area / basisArea * 48.5) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng + 1000} BYN`;
+            prices[2].innerText = `${Math.ceil((basisArea * 51.9 + (area - basisArea) * area / basisArea * 51.9) * k2 * k4 / 10 * 1.1) * 10 + 100 - eng + 1000} BYN`;
         } else {
             prices[0].innerText = `0 BYN`;
             prices[1].innerText = `0 BYN`;
