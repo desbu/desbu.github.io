@@ -1,15 +1,13 @@
 <footer class="footer" id="contacts">
-    <div class="footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus"
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
     <div class="footer__content">
         <div class="footer__info">
             <p class="footer__title" href="/">MARCHUK.BY | Строительные проекты</p>
             <div class="footer__text">
                 <p class="footer__line">Работаем по&nbsp;всей&nbsp;Беларуси</p>
-                <p class="footer__line">в будние дни с 11 до 20, обед с 14 до 15</p>
+                <p class="footer__line">в будние дни с 11 до 20<br>обед с 14 до 15</p>
             </div>
 
             <p class="footer__name">ИП Марчук И.Н. УНП 291498554</p>
@@ -37,7 +35,7 @@
                 <div class="footer__wrapper">
                     <a class="footer__link footer__link--address"
                        href="https://www.google.com/maps?cid=6791659934894024284&hl=ru">Брест,
-                        ул. Советская, 68, ТЦ Атис Холл, каб. 407</a>
+                        ул. Советская, 68<br>ТЦ Атис Холл, каб. 407</a>
                     <a class="footer__link footer__link--mail" href="mailto:info@marchuk.by">info@marchuk.by</a>
                 </div>
             </div>
