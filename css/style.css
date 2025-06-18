@@ -181,7 +181,6 @@ nav h1 {
 .button {
     margin-left: 400px;
     padding: 12px 30px 13px 30px;
-    border-radius: 5px;
     background-color: var(--highlight-color);
     font-size: 18px;
     font-weight: 400;
