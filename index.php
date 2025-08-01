@@ -338,7 +338,7 @@
 <?php include_once 'footer.php'?>
 
 <script src="js/script.js"></script>
-<script src="js/calculator-v1.10.js"></script>
+<script src="js/calculator-v1.11.js"></script>
 
 <script>
     shiftSlide();
@@ -381,7 +381,7 @@
             "ratingValue": "5",
             "bestRating": "5",
             "worstRating": "5",
-            "ratingCount": "104"
+            "ratingCount": "107"
         }
     }
 </script>
