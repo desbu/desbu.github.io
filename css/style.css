@@ -29,6 +29,13 @@ body {
     color: var(--text-color);
 }
 
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .main-page {
     display: grid;
     grid-template-columns: 1fr 1140px 1fr;
@@ -846,7 +853,6 @@ article .slider-dots {
         margin-left: auto;
         margin-right: auto;
         justify-content: space-between;
-        list-style: none;
     }
 }
 

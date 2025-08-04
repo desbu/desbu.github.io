@@ -2,9 +2,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .main-services__item {
@@ -55,7 +52,6 @@
     position: relative;
     padding-left: 25px;
     margin: 20px 0;
-    list-style: none;
 }
 
 .list__item.check :before {
@@ -128,8 +124,6 @@
 
 .add-services {
     margin: 44px 0 0;
-    padding: 0;
-    list-style: none;
 }
 
 .services li:last-of-type p {
@@ -143,7 +137,6 @@ details {
 .add-services__summary {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     transition: color 0.2s ease-in-out;
 }
 
@@ -219,9 +212,6 @@ details[open] summary:before {
         display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
     }
 
     .main-services__title {
