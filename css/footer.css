@@ -139,7 +139,7 @@
     fill: white;
 }
 
-.footer__payments-list {
+.footer__payments-wrapper {
     grid-column: 2 / -2;
     display: flex;
     justify-content: center;
@@ -147,9 +147,21 @@
     margin-bottom: 30px;
 }
 
+.footer__payments-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
 .footer__payments-img {
     display: block;
     height: 25px;
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+.footer__payments-img:hover {
+    opacity: 1;
 }
 
 @media (max-width: 1200px) {
@@ -160,7 +172,7 @@
 
     .footer__map {
         width: 100%;
-        height: calc(100vh - 452px);
+        height: calc(100vh - 477px);
     }
 
     .footer__content {
@@ -226,9 +238,14 @@
         height: 32px;
     }
 
-    .footer__payments-list {
+    .footer__payments-wrapper {
+        flex-direction: column;
+        gap: 10px;
         margin-bottom: 10px;
-        gap: 15px;
+    }
+
+    .footer__payments-list {
+        gap: 10px;
     }
 
     .footer__payments-img {

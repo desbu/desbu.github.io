@@ -78,8 +78,10 @@
                        target="_blank">
                         <span class="visually-hidden">TikTok</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.8182 7.15151C21.8182 4.40683 19.5931 2.18182 16.8485 2.18182H7.15151C4.40683 2.18182 2.18182 4.40683 2.18182 7.15151V16.8485C2.18182 19.5931 4.40683 21.8182 7.15151 21.8182H16.8485C19.5931 21.8182 21.8182 19.5931 21.8182 16.8485V7.15151ZM24 16.8485C24 20.7981 20.7981 24 16.8485 24H7.15151C3.20184 24 4.85803e-06 20.7981 0 16.8485V7.15151C5.21921e-06 3.20185 3.20185 5.21785e-06 7.15151 0H16.8485C20.7981 4.85929e-06 24 3.20184 24 7.15151V16.8485Z" fill="white"/>
-                            <path d="M4.84863 15.6364C4.84863 13.0255 6.96511 10.9091 9.57589 10.9091C10.1784 10.9091 10.6668 11.3975 10.6668 12C10.6668 12.6025 10.1784 13.0909 9.57589 13.0909C8.17008 13.0909 7.03045 14.2305 7.03045 15.6364C7.03045 17.0422 8.17008 18.1818 9.57589 18.1818C10.9818 18.1818 12.1214 17.0422 12.1214 15.6364V4.72726C12.1214 4.19221 12.5094 3.73611 13.0375 3.65041C13.5657 3.56472 14.078 3.87471 14.2472 4.3823C14.3986 4.83643 14.793 5.58677 15.4482 6.20881C16.0849 6.81325 16.938 7.27269 18.0607 7.2727C18.6632 7.2727 19.1516 7.76112 19.1516 8.36361C19.1516 8.9661 18.6632 9.45452 18.0607 9.45452C16.4854 9.45451 15.2346 8.86907 14.3032 8.10618V15.6364C14.3032 18.2472 12.1867 20.3636 9.57589 20.3636C6.96511 20.3636 4.84863 18.2472 4.84863 15.6364Z" fill="white"/>
+                            <path d="M21.8182 7.15151C21.8182 4.40683 19.5931 2.18182 16.8485 2.18182H7.15151C4.40683 2.18182 2.18182 4.40683 2.18182 7.15151V16.8485C2.18182 19.5931 4.40683 21.8182 7.15151 21.8182H16.8485C19.5931 21.8182 21.8182 19.5931 21.8182 16.8485V7.15151ZM24 16.8485C24 20.7981 20.7981 24 16.8485 24H7.15151C3.20184 24 4.85803e-06 20.7981 0 16.8485V7.15151C5.21921e-06 3.20185 3.20185 5.21785e-06 7.15151 0H16.8485C20.7981 4.85929e-06 24 3.20184 24 7.15151V16.8485Z"
+                                  fill="white"/>
+                            <path d="M4.84863 15.6364C4.84863 13.0255 6.96511 10.9091 9.57589 10.9091C10.1784 10.9091 10.6668 11.3975 10.6668 12C10.6668 12.6025 10.1784 13.0909 9.57589 13.0909C8.17008 13.0909 7.03045 14.2305 7.03045 15.6364C7.03045 17.0422 8.17008 18.1818 9.57589 18.1818C10.9818 18.1818 12.1214 17.0422 12.1214 15.6364V4.72726C12.1214 4.19221 12.5094 3.73611 13.0375 3.65041C13.5657 3.56472 14.078 3.87471 14.2472 4.3823C14.3986 4.83643 14.793 5.58677 15.4482 6.20881C16.0849 6.81325 16.938 7.27269 18.0607 7.2727C18.6632 7.2727 19.1516 7.76112 19.1516 8.36361C19.1516 8.9661 18.6632 9.45452 18.0607 9.45452C16.4854 9.45451 15.2346 8.86907 14.3032 8.10618V15.6364C14.3032 18.2472 12.1867 20.3636 9.57589 20.3636C6.96511 20.3636 4.84863 18.2472 4.84863 15.6364Z"
+                                  fill="white"/>
                         </svg>
                     </a>
                 </li>
@@ -96,21 +98,40 @@
             </ul>
         </div>
     </div>
-    <ul class="footer__payments-list">
-        <li>
-            <img class="footer__payments-img" src="/img/payments/visa.svg" alt="Visa">
-        </li>
-        <li>
-            <img class="footer__payments-img" src="/img/payments/mastercard.svg" alt="Mastercard">
-        </li>
-        <li>
-            <img class="footer__payments-img" src="/img/payments/belcard.svg" alt="Белкарт">
-        </li>
-        <li>
-            <img class="footer__payments-img" src="/img/payments/apple-pay.svg" alt="Apple Pay">
-        </li>
-        <li>
-            <img class="footer__payments-img" src="/img/payments/e-pos.svg" alt="E-pos">
-        </li>
-    </ul>
+    <div class="footer__payments-wrapper">
+        <ul class="footer__payments-list">
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-01.png" alt="Альфа-Банка">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-02.png" alt="Visa">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-03.png" alt="Visa Secure">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-04.png" alt="MasterCard ID Check">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-05.png" alt="MasterCard">
+            </li>
+        </ul>
+        <ul class="footer__payments-list">
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-06.png" alt="Белкарт ИнтернетПароль">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-08.png" alt="Белкарт">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-09.png" alt="Samsung Pay">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/white-10.png" alt="Apple Pay">
+            </li>
+            <li>
+                <img class="footer__payments-img" src="/img/payments/e-pos.svg" alt="E-pos">
+            </li>
+        </ul>
+    </div>
 </footer>
