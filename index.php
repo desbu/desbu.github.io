@@ -22,7 +22,7 @@
     <title>MARCHUK.BY | Строительные проекты</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css?v2">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -265,7 +265,7 @@
                 <details class="add-services__details" open>
                     <summary class="add-services__summary">
                         <p class="add-services__title">Расчёт пожарного разрыва</p>
-                        <span class="add-services__price">900р</span>
+                        <span class="add-services__price"></span>
                     </summary>
                     <p class="add-services__text">Расчёт по&nbsp;обеспечению (оценке) пожарной безопасности в&nbsp;рамках
                         разработки генерального плана объекта</p>
@@ -276,7 +276,7 @@
                 <details class="add-services__details">
                     <summary class="add-services__summary">
                         <p class="add-services__title">Визуализация 360*</p>
-                        <span class="add-services__price">650р</span>
+                        <span class="add-services__price">900р</span>
                     </summary>
                     <p class="add-services__text">Создание <a href="/360" title="Смотреть пример">3D тура</a> вокруг
                         объекта строительства. Тур
@@ -338,7 +338,7 @@
 <?php include_once 'footer.php'?>
 
 <script src="js/script.js"></script>
-<script src="js/calculator-v1.11.js"></script>
+<script src="js/calculator-v1.12.js"></script>
 
 <script>
     shiftSlide();
