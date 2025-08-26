@@ -112,11 +112,11 @@
             <li>
                 <img class="footer__payments-img" src="/img/payments/white-04.png" alt="MasterCard ID Check">
             </li>
+        </ul>
+        <ul class="footer__payments-list">
             <li>
                 <img class="footer__payments-img" src="/img/payments/white-05.png" alt="MasterCard">
             </li>
-        </ul>
-        <ul class="footer__payments-list">
             <li>
                 <img class="footer__payments-img" src="/img/payments/white-06.png" alt="Белкарт ИнтернетПароль">
             </li>
@@ -134,4 +134,5 @@
             </li>
         </ul>
     </div>
+    <p class="footer__requisite">Индивидуальный предприниматель Марчук Илья Николаевич. Почтовый адрес: 224017, г.&nbsp;Брест,&nbsp;ул.&nbsp;Московская,&nbsp;д.&nbsp;253,&nbsp;кв.&nbsp;104. Юридический адрес: 224017, г.&nbsp;Брест,&nbsp;ул.&nbsp;Московская,&nbsp;д.&nbsp;253,&nbsp;кв.&nbsp;104. УНП 291498554. Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;0651738 выдано 01.06.2017&nbsp;г.</p>
 </footer>

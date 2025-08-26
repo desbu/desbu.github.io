@@ -5,6 +5,7 @@
     grid-template-columns: 1fr 1140px 1fr;
     margin-top: 100px;
     height: 100vh;
+    color: #c8c8c8;
     background: var(--text-color);
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
     z-index: 1;
@@ -27,7 +28,7 @@
 .footer__map {
     grid-column: 1/-1;
     width: 100%;
-    height: calc(100vh - 347px);
+    height: calc(100vh - 395px);
 }
 
 .footer__content {
@@ -59,7 +60,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
-    color: #c8c8c8;
+    color: inherit;
 }
 
 .footer__text {
@@ -144,7 +145,7 @@
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .footer__payments-list {
@@ -164,15 +165,24 @@
     opacity: 1;
 }
 
+.footer__requisite {
+    grid-column: 2 / -2;
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    opacity: .5;
+}
+
 @media (max-width: 1200px) {
     .footer {
         grid-template-columns: 10px 1fr 10px;
         margin-top: 60px;
+        height: auto;
     }
 
     .footer__map {
-        width: 100%;
-        height: calc(100vh - 477px);
+        height: 300px;
     }
 
     .footer__content {
@@ -241,7 +251,7 @@
     .footer__payments-wrapper {
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .footer__payments-list {
@@ -249,6 +259,10 @@
     }
 
     .footer__payments-img {
-        height: 15px;
+        height: 20px;
+    }
+
+    .footer__requisite {
+        font-size: 12px;
     }
 }
