@@ -28,7 +28,7 @@
 .footer__map {
     grid-column: 1/-1;
     width: 100%;
-    height: calc(100vh - 395px);
+    height: calc(100vh - 394px);
 }
 
 .footer__content {
