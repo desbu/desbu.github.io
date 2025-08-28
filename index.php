@@ -38,7 +38,6 @@
             <li class="link"><a href="#about-us">О нас</a></li>
             <li class="link"><a href="#services">Услуги</a></li>
             <li class="link"><a href="#reviews">Отзывы</a></li>
-            <li class="link"><a href="#articles">Статьи</a></li>
             <li class="link"><a href="#contacts">Контакты</a></li>
         </ul>
         <div class="nav-button">
@@ -83,7 +82,7 @@
             проектирования и&nbsp;расчета конструкций, внимание к&nbsp;деталям и&nbsp;увлечение собственным делом
             определяют нашу исключительную конкурентоспособность на&nbsp;рынке проектных услуг.</p>
         <p>Помимо разработки архитектурных и&nbsp;конструктивных решений, оказания <a href="#services">широкого
-            спектра</a> инженерных и&nbsp;дизайнерских услуг, мы&nbsp;занимаемся оптимизацией и&nbsp;сравнением
+                спектра</a> инженерных и&nbsp;дизайнерских услуг, мы&nbsp;занимаемся оптимизацией и&nbsp;сравнением
             возможных вариантов исполнения отдельных строительных конструкций и&nbsp;объектов строительства
             в&nbsp;целом.</p>
         <div class="team">
@@ -187,11 +186,13 @@
                 <ul class="list">
                     <li class="list__item check">
                         <h4 class="list__title">Архитектурные решения</h4>
-                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
+                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом
+                            функциональных, эксплуатационных и&nbsp;эстетических требований</p>
                     </li>
                     <li class="list__item check">
                         <h4 class="list__title">Генеральный план</h4>
-                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными и&nbsp;санитарными нормами, благоустройство территории</p>
+                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными
+                            и&nbsp;санитарными нормами, благоустройство территории</p>
                     </li>
                     <li class="list__item check">
                         <h4 class="list__title">Инженерные изыскания</h4>
@@ -206,11 +207,13 @@
                 <ul class="list">
                     <li class="list__item check">
                         <h4 class="list__title">Архитектурные решения</h4>
-                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
+                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом
+                            функциональных, эксплуатационных и&nbsp;эстетических требований</p>
                     </li>
                     <li class="list__item check">
                         <h4 class="list__title">Генеральный план</h4>
-                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными и&nbsp;санитарными нормами, благоустройство территории</p>
+                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными
+                            и&nbsp;санитарными нормами, благоустройство территории</p>
                     </li>
                     <li class="list__item plus">
                         <h4 class="list__title">Интерактивная модель</h4>
@@ -233,11 +236,13 @@
                 <ul class="list">
                     <li class="list__item check">
                         <h4 class="list__title">Архитектурные решения</h4>
-                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом функциональных, эксплуатационных и&nbsp;эстетических требований</p>
+                        <p class="list__text">Разработка архитектурно-планировочной концепции объекта с&nbsp;учетом
+                            функциональных, эксплуатационных и&nbsp;эстетических требований</p>
                     </li>
                     <li class="list__item check">
                         <h4 class="list__title">Генеральный план</h4>
-                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными и&nbsp;санитарными нормами, благоустройство территории</p>
+                        <p class="list__text">Размещение объектов на&nbsp;земельном участке в&nbsp;соответствии с&nbsp;пожарными
+                            и&nbsp;санитарными нормами, благоустройство территории</p>
                     </li>
                     <li class="list__item plus">
                         <h4 class="list__title">Интерактивная модель</h4>
@@ -254,7 +259,8 @@
                     </li>
                     <li class="list__item check">
                         <h4 class="list__title">Инженерные изыскания</h4>
-                        <p class="list__text">Исследование рельефа местности (геодезия) и&nbsp;грунтовых условий участка (геология)</p>
+                        <p class="list__text">Исследование рельефа местности (геодезия) и&nbsp;грунтовых условий участка
+                            (геология)</p>
                     </li>
                 </ul>
                 <span class="main-services__duration">4&nbsp;&mdash; 6&nbsp;месяцев</span>
@@ -289,6 +295,44 @@
         </ul>
     </section>
 
+    <section class="process" id="process">
+        <div class="wrapper">
+            <h2 class="title">Порядок оказания услуг</h2>
+        </div>
+        <ol>
+            <li class="add-services__item">
+                <ul class="process__list">
+                    <li class="process__item">Встреча и обсуждение концепции объекта</li>
+                    <li class="process__item">Заключение договора</li>
+                    <li class="process__item">Внесение авансового платежа</li>
+                </ul>
+                <div class="line"></div>
+            </li>
+            <li class="add-services__item">
+                <ul class="process__list ">
+                    <li class="process__item">Выезд на участок</li>
+                    <li class="process__item">Геодезическая съемка</li>
+                    <li class="process__item">Планировочная концепция с раположением на участке</li>
+                    <li class="process__item">Геологические изыскания</li>
+                    <li class="process__item">Концепция экстерьера</li>
+                    <li class="process__item">Интерактивная модель</li>
+                    <li class="process__item">Визуализация экстерьера</li>
+                    <li class="process__item">Согласование проекта в исполкоме</li>
+                    <li class="process__item">Промежуточная оплата</li>
+                    <li class="process__item">Расчёт и проектирование несущих конструкций</li>
+                </ul>
+                <div class="line"></div>
+            </li>
+            <li class="add-services__item">
+                <ul class="process__list">
+                    <li class="process__item">Передача проека</li>
+                    <li class="process__item">Окончательная оплата</li>
+                </ul>
+                <div class="line"></div>
+            </li>
+        </ol>
+    </section>
+
     <section id="reviews">
         <div class="wrapper">
             <h2 class="title">Отзывы</h2>
@@ -296,46 +340,9 @@
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-d622b7e2-f77b-4037-83d4-6e7f7ec56be2"></div>
     </section>
-
-    <section class="articles" id="articles">
-        <div class="wrapper">
-            <h2 class="title">Статьи</h2>
-        </div>
-        <ul class="articles__items">
-            <li class="articles__item">
-                <a href="articles/a1.php">
-                    <h3>Хотим свой дом! С чего начать? (1&nbsp;часть)</h3>
-                    <img src="articles/a1.jpg" loading="lazy" alt="Свой уютный дом">
-                    <p class="articles__paragraph">В&nbsp;этой части цикла статей мы&nbsp;расскажем вам куда обращаться,
-                        для получения/приобретения земельного участка и&nbsp;о&nbsp;необходимой документации для
-                        получения разрешения на&nbsp;проектирование ...</p>
-                </a>
-            </li>
-            <li class="articles__item">
-                <a href="articles/a2.php">
-                    <h3>Хотим свой дом! С чего начать? (2&nbsp;часть)</h3>
-                    <img src="articles/a2.jpg" loading="lazy" alt="">
-                    <p class="articles__paragraph">Ну&nbsp;вот, участок есть, разрешение есть&nbsp;&mdash; можно
-                        приступить плотнее
-                        к&nbsp;обдумыванию параметров будущего дома. Первым делом следует решить хотите
-                        вы&nbsp;типовой (готовый) проект, или вам важна&nbsp;...</p>
-                </a>
-            </li>
-            <li class="articles__item">
-                <a href="articles/a3.php">
-                    <h3>Хотим свой дом! С чего начать? (3&nbsp;часть)</h3>
-                    <img src="articles/a3.jpg" loading="lazy" alt="Cвертки чертежей">
-                    <p class="articles__paragraph">Генеральный план на&nbsp;ряду с&nbsp;архитектурным решением
-                        является обязательной
-                        и&nbsp;утверждаемой частью проекта. Он&nbsp;необходим для отражения границ участка,
-                        положения дома и&nbsp;сооружений, размещения&nbsp;...</p>
-                </a>
-            </li>
-        </ul>
-    </section>
 </main>
 
-<?php include_once 'footer.php'?>
+<?php include_once 'includes/footer.php' ?>
 
 <script src="js/script.js"></script>
 <script src="js/calculator-v1.12.js"></script>
