@@ -302,7 +302,7 @@
         <ol>
             <li class="add-services__item">
                 <ul class="process__list">
-                    <li class="process__item">Встреча и обсуждение концепции объекта</li>
+                    <li class="process__item">Встреча и&nbsp;обсуждение концепции объекта</li>
                     <li class="process__item">Заключение договора</li>
                     <li class="process__item">Внесение авансового платежа</li>
                 </ul>
@@ -310,16 +310,16 @@
             </li>
             <li class="add-services__item">
                 <ul class="process__list ">
-                    <li class="process__item">Выезд на участок</li>
+                    <li class="process__item">Выезд на&nbsp;участок</li>
                     <li class="process__item">Геодезическая съемка</li>
-                    <li class="process__item">Планировочная концепция с раположением на участке</li>
+                    <li class="process__item">Планировочная концепция с&nbsp;раположением на&nbsp;участке</li>
                     <li class="process__item">Геологические изыскания</li>
                     <li class="process__item">Концепция экстерьера</li>
                     <li class="process__item">Интерактивная модель</li>
                     <li class="process__item">Визуализация экстерьера</li>
-                    <li class="process__item">Согласование проекта в исполкоме</li>
+                    <li class="process__item">Согласование проекта в&nbsp;исполкоме</li>
                     <li class="process__item">Промежуточная оплата</li>
-                    <li class="process__item">Расчёт и проектирование несущих конструкций</li>
+                    <li class="process__item">Расчёт и&nbsp;проектирование несущих конструкций</li>
                 </ul>
                 <div class="line"></div>
             </li>
