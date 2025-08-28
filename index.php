@@ -22,7 +22,7 @@
     <title>MARCHUK.BY | Строительные проекты</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css?v1.5">
+    <link rel="stylesheet" href="css/style.css?v1.6">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -290,7 +290,7 @@
                     <p class="add-services__description">*услуга актуальна для комплектов с визуализацией экстерьера в
                         составе</p>
                 </details>
-                <div class="line"></div>
+                <div class="line line_last"></div>
             </li>
         </ul>
     </section>
@@ -328,7 +328,7 @@
                     <li class="process__item">Передача проека</li>
                     <li class="process__item">Окончательная оплата</li>
                 </ul>
-                <div class="line"></div>
+                <div class="line line_last"></div>
             </li>
         </ol>
     </section>
