@@ -202,7 +202,7 @@ details[open] summary:before {
     opacity: 0.2;
 }
 
-.line_last {
+.line.line_last {
     margin: 35px 0 0;
 }
 
