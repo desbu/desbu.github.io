@@ -284,7 +284,7 @@
                         <p class="add-services__title">Визуализация 360*</p>
                         <span class="add-services__price">900р</span>
                     </summary>
-                    <p class="add-services__text">Создание <a href="/360/example" title="Смотреть пример">3D тура</a> вокруг
+                    <p class="add-services__text">Создание <a href="/360/example/" title="Смотреть пример">3D тура</a> вокруг
                         объекта строительства. Тур
                         включает 5-7 точек с возможностью обзора на 360 градусов. </p>
                     <p class="add-services__description">*услуга актуальна для комплектов с визуализацией экстерьера в
