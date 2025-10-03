@@ -22,6 +22,11 @@
     transform: translateY(-5px);
 }
 
+.main-services__item:nth-of-type(2):hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 0px var(--highlight-color);
+}
+
 .main-services__title,
 .main-services__price {
     margin: 0;

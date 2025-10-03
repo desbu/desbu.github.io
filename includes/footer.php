@@ -5,7 +5,7 @@
     window.addEventListener('load', function () {
         setTimeout(() => {
             const targetElement = document.querySelector('[class^="Window__Content"]');
-            
+
             if (targetElement && targetElement.nextElementSibling) {
                 targetElement.nextElementSibling.remove();
             }
