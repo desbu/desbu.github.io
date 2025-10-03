@@ -22,7 +22,7 @@
     <title>MARCHUK.BY | Строительные проекты</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css?v2">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
