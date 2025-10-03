@@ -1,7 +1,17 @@
-
 <!-- Elfsight Telegram Chat | marchuk.by -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <div class="elfsight-app-47e9668a-9602-4c58-8a9b-2c5b2ee1608b" data-elfsight-app-lazy></div>
+<script>
+    window.addEventListener('load', function () {
+        setTimeout(() => {
+            const targetElement = document.querySelector('[class^="Window__Content"]');
+            
+            if (targetElement && targetElement.nextElementSibling) {
+                targetElement.nextElementSibling.remove();
+            }
+        }, 3000);
+    });
+</script>
 
 <footer class="footer" id="contacts">
     <iframe class="footer__map"
@@ -139,7 +149,9 @@
             </li>
         </ul>
     </div>
-    <p class="footer__requisite">Индивидуальный предприниматель Марчук Илья Николаевич. Почтовый адрес: 224030, Беларусь, г.&nbsp;Брест,&nbsp;ул.&nbsp;Советская,&nbsp;68,&nbsp;каб.&nbsp;407.
-        Юридический адрес: 224017, Беларусь, г.&nbsp;Брест,&nbsp;ул.&nbsp;Московская,&nbsp;253,&nbsp;кв.&nbsp;104. УНП 291498554.
+    <p class="footer__requisite">Индивидуальный предприниматель Марчук Илья Николаевич. Почтовый адрес: 224030,
+        Беларусь, г.&nbsp;Брест,&nbsp;ул.&nbsp;Советская,&nbsp;68,&nbsp;каб.&nbsp;407.
+        Юридический адрес: 224017, Беларусь, г.&nbsp;Брест,&nbsp;ул.&nbsp;Московская,&nbsp;253,&nbsp;кв.&nbsp;104. УНП
+        291498554.
         Свидетельство о&nbsp;государственной регистрации &#8470;&nbsp;0651738 выдано 01.06.2017&nbsp;г.</p>
 </footer>
