@@ -352,10 +352,6 @@
     countArea();
 </script>
 
-<!-- Elfsight Telegram Chat | marchuk.by -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-47e9668a-9602-4c58-8a9b-2c5b2ee1608b" data-elfsight-app-lazy></div>
-
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",

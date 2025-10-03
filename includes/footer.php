@@ -1,4 +1,7 @@
-<footer class="footer" id="contacts">
+<!-- Elfsight Telegram Chat | marchuk.by -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+
+<footer class="footer elfsight-app-47e9668a-9602-4c58-8a9b-2c5b2ee1608b" id="contacts" data-elfsight-app-lazy>
     <iframe class="footer__map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1224.7496894386952!2d23.698603!3d52.125237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e40d2ba1e9c665c!2zTUFSQ0hVSyB8INCh0YLRgNC-0LjRgtC10LvRjNC90YvQtSDQv9GA0L7QtdC60YLRiw!5e0!3m2!1sru!2sus!4v1650394578820!5m2!1sru!2sus"
             style="border:0;" allowfullscreen="" loading="lazy"
