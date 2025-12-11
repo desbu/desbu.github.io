@@ -20,7 +20,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="footer__content">
         <div class="footer__info">
-            <p class="footer__title" href="/">MARCHUK.BY | Строительные проекты</p>
+            <p class="footer__title">MARCHUK.BY | Строительные проекты</p>
             <div class="footer__text">
                 <p class="footer__line">Работаем по&nbsp;всей&nbsp;Беларуси</p>
                 <p class="footer__line">в будние дни с 11 до 20<br>обед с 14 до 15</p>
