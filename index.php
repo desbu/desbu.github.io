@@ -50,7 +50,7 @@
             <li class="item">
                 <h3>Качество</h3>
                 <p>мы действительно стараемся</p>
-                <a href="#about-us" class="button">Подробнее</a>
+                <a href="#reviews" class="button">Подробнее</a>
             </li>
             <li class="item">
                 <h3>Выгода</h3>
