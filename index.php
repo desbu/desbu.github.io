@@ -345,7 +345,7 @@
 <?php include_once 'includes/footer.php' ?>
 
 <script src="js/script.js"></script>
-<script src="js/calculator-v1.12.js"></script>
+<script src="js/calculator-v1.13.js"></script>
 
 <script>
     shiftSlide();

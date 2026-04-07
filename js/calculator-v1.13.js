@@ -47,8 +47,8 @@ function countArea() {
         }
 
         const basisArea = 180;
-        const eng = select.value == 'house' ? 0 : 650;
-        const geology = 1000;
+        const eng = select.value == 'house' ? 0 : 850;
+        const geology = 1100;
 
         if (input.value > 400) input.value = 400;
         if (input.value < 0) input.value = 0;
@@ -56,13 +56,13 @@ function countArea() {
         area = input.value;
 
         if (area > basisArea) {
-            prices[0].innerText = `${Math.ceil(((basisArea * 16 + (area - basisArea) * basisArea / area * 16) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
-            prices[1].innerText = `${Math.ceil(((basisArea * 26 + (area - basisArea) * basisArea / area * 26) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
+            prices[0].innerText = `${Math.ceil(((basisArea * 17 + (area - basisArea) * basisArea / area * 17) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
+            prices[1].innerText = `${Math.ceil(((basisArea * 28 + (area - basisArea) * basisArea / area * 28) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
             prices[2].innerText = `${Math.ceil(((basisArea * 57 + (area - basisArea) * basisArea / area * 57) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + geology} BYN`;
         } else if (area > 0) {
             if (area < 90) area = 90;
-            prices[0].innerText = `${Math.ceil(((basisArea * 16 + (area - basisArea) * area / basisArea * 16) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
-            prices[1].innerText = `${Math.ceil(((basisArea * 26 + (area - basisArea) * area / basisArea * 26) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
+            prices[0].innerText = `${Math.ceil(((basisArea * 17 + (area - basisArea) * area / basisArea * 17) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
+            prices[1].innerText = `${Math.ceil(((basisArea * 28 + (area - basisArea) * area / basisArea * 28) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng} BYN`;
             prices[2].innerText = `${Math.ceil(((basisArea * 57 + (area - basisArea) * area / basisArea * 57) * k1 * k2 * k3 / 10) * 1.2) * 10 + 100 - eng + geology} BYN`;
         } else {
             prices[0].innerText = `0 BYN`;
