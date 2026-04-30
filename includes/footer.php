@@ -80,7 +80,7 @@
                     </a>
                 </li>
                 <li class="socials__item">
-                    <a class="socials__link" href="https://wa.me/375292468681" title="WhatsApp" target="_blank">
+                    <a class="socials__link" href="https://wa.me/375333101212" title="WhatsApp" target="_blank">
                         <span class="visually-hidden">WhatsApp</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
