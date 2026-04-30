@@ -47,7 +47,7 @@
         </div>
         <div class="footer__contacts">
             <div class="footer__live">
-                <a class="footer__link footer__link--phone" href="tel:+375292468681">+375 29 246-86-81</a>
+                <a class="footer__link footer__link--phone" href="tel:+375333101212">+375 33 310-12-12</a>
                 <div class="footer__wrapper">
                     <a class="footer__link footer__link--address"
                        href="https://www.google.com/maps?cid=6791659934894024284&hl=ru">Брест,
@@ -57,7 +57,7 @@
             </div>
             <ul class="socials footer__socials">
                 <li class="socials__item">
-                    <a class="socials__link" href="tg://resolve?domain=Illa_Marcuk" title="Telegram"
+                    <a class="socials__link" href="tg://resolve?domain=marchukby" title="Telegram"
                        target="_blank">
                         <span class="visually-hidden">Telegram</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
