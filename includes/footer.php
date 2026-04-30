@@ -70,7 +70,7 @@
                     </a>
                 </li>
                 <li class="socials__item">
-                    <a class="socials__link" href="viber://chat?number=375292468681" title="Viber" target="_blank">
+                    <a class="socials__link" href="viber://chat?number=375333101212" title="Viber" target="_blank">
                         <span class="visually-hidden">Viber</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                              fill-rule="evenodd" clip-rule="evenodd">
