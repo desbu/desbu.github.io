@@ -263,7 +263,7 @@
                             (геология)</p>
                     </li>
                 </ul>
-                <span class="main-services__duration">3&nbsp;&mdash; 4&nbsp;месяцев</span>
+                <span class="main-services__duration">3&nbsp;&mdash; 4&nbsp;месяца</span>
             </li>
         </ul>
         <ul class="add-services">
