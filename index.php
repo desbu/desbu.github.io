@@ -199,7 +199,7 @@
                         <p class="list__text">Исследование рельефа местности (геодезия)</p>
                     </li>
                 </ul>
-                <span class="main-services__duration">3&nbsp;&mdash; 5&nbsp;недель</span>
+                <span class="main-services__duration">1&nbsp;&mdash; 2&nbsp;месяца</span>
             </li>
             <li class="main-services__item">
                 <h3 class="main-services__title">Оптимальный</h3>
@@ -228,7 +228,7 @@
                         <p class="list__text">Исследование рельефа местности (геодезия)</p>
                     </li>
                 </ul>
-                <span class="main-services__duration">6&nbsp;&mdash; 9&nbsp;недель</span>
+                <span class="main-services__duration">2&nbsp;&mdash; 3&nbsp;месяца</span>
             </li>
             <li class="main-services__item">
                 <h3 class="main-services__title">Расширенный</h3>
@@ -263,7 +263,7 @@
                             (геология)</p>
                     </li>
                 </ul>
-                <span class="main-services__duration">4&nbsp;&mdash; 6&nbsp;месяцев</span>
+                <span class="main-services__duration">3&nbsp;&mdash; 4&nbsp;месяцев</span>
             </li>
         </ul>
         <ul class="add-services">
@@ -345,7 +345,7 @@
 <?php include_once 'includes/footer.php' ?>
 
 <script src="js/script.js"></script>
-<script src="js/calculator-v1.13.js"></script>
+<script src="js/calculator-v1.14.js"></script>
 
 <script>
     shiftSlide();
