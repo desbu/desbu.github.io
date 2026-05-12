@@ -44,11 +44,6 @@ ol {
 
 }
 
-.secondary-page {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -77,13 +72,6 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
 }
 
-.secondary-page header {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-    grid-column: 1/-1;
-    color: var(--text-color);
-}
-
 main {
     grid-column: 2/3;
 }
@@ -108,10 +96,6 @@ nav h1 {
     align-self: flex-end;
     text-decoration: none;
     color: white;
-}
-
-.secondary-page .nav-logo {
-    color: var(--text-color);
 }
 
 .main-nav {
@@ -140,10 +124,6 @@ nav h1 {
     color: white;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-}
-
-.secondary-page .main-nav a {
-    color: var(--text-color);
 }
 
 .main-nav a:hover {
@@ -496,8 +476,6 @@ header .slider-dots {
 @media (max-width: 1200px) {
     .main-page,
     .main-page header,
-    .secondary-page,
-    .secondary-page header,
     footer {
         grid-template-columns: 10px 1fr 10px;
     }
@@ -583,10 +561,6 @@ header .slider-dots {
         text-transform: uppercase;
     }
 
-    .secondary-page .main-nav a {
-        color: white;
-    }
-
     .line-nav {
         margin: 5px 30px;
     }
@@ -660,10 +634,6 @@ header .slider-dots {
 
     .title {
         font-size: 20px;
-    }
-
-    .secondary-page h2 {
-        margin: 84px auto 34px;
     }
 
     .about-us .team {
