@@ -15,12 +15,14 @@
     <meta property="og:description"
           content="Проектирование домов, построек и сооружений, расчет конструкций, визуализация, оценка пожарной безопасности, разработка сметной документации.">
     <meta property="og:image" content="https://marchuk.by/img/logo.png">
+    <meta property="og:url" content="https://marchuk.by/">
 
     <meta name="google-site-verification" content="ChlcInSwb1BcG6ckoXoak0j4lOoxIZdGeqECgzIzMAg">
     <meta name="yandex-verification" content="157a0f0d56ba2896">
 
     <title>MARCHUK.BY | Строительные проекты</title>
 
+    <link rel="canonical" href="https://marchuk.by/">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css?v2">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
