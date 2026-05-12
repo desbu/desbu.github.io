@@ -36,7 +36,6 @@
         </h1>
         <ul class="main-nav">
             <li class="link"><a>Главная</a></li>
-            <div class="line-nav"></div>
             <li class="link"><a href="#about-us">О нас</a></li>
             <li class="link"><a href="#services">Услуги</a></li>
             <li class="link"><a href="#reviews">Отзывы</a></li>
