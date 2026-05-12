@@ -11,10 +11,14 @@
     <meta name="keywords"
           content="Проект, проекты домов, дом, коттедж, баня, навес, фундамент, стены, крыша, кровля, сооружение, проектирование, расчет конструкций, сметы, пожарный расчет">
 
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="MARCHUK | Строительные проекты">
     <meta property="og:description"
           content="Проектирование домов, построек и сооружений, расчет конструкций, визуализация, оценка пожарной безопасности, разработка сметной документации.">
     <meta property="og:image" content="https://marchuk.by/img/logo.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
     <meta property="og:url" content="https://marchuk.by/">
 
     <meta name="google-site-verification" content="ChlcInSwb1BcG6ckoXoak0j4lOoxIZdGeqECgzIzMAg">
@@ -32,7 +36,7 @@
 <header id="top">
     <nav>
         <h1 class="nav-logo">
-            <span class="hidden-logo" itemprop="name">MARCHUK.BY | </span>Строительные проекты
+            <span class="hidden-logo">MARCHUK.BY | </span>Строительные проекты
         </h1>
         <ul class="main-nav">
             <li class="link"><a>Главная</a></li>
@@ -357,41 +361,45 @@
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "ProfessionalService"],
         "name": "MARCHUK | Строительные проекты",
         "legalName": "ИП Марчук И.Н.",
         "description": "Проектирование индивидуальных жилых домов, построек и сооружений, расчет конструкций, визуализация, разработка сметной документации, оценка пожарной безопасности.",
         "url": "https://marchuk.by/",
-        "logo": "https://marchuk.by/img/logo.png",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://marchuk.by/img/logo.png",
+            "width": 600,
+            "height": 600
+        },
         "email": "info@marchuk.by",
+        "telephone": "+375333101212",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Советская 68",
+            "streetAddress": "ул. Советская, 68",
             "addressLocality": "Брест",
             "postalCode": "224030",
             "addressCountry": "BY"
         },
-        "telephone": "+375 (29) 246-86-81",
         "priceRange": "$$",
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-            ],
-            "opens": "11:00",
-            "closes": "20:00"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "5",
-            "ratingCount": "107"
-        }
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "11:00",
+                "closes": "14:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "15:00",
+                "closes": "20:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/marcuk.architektary/",
+            "https://www.tiktok.com/@marcuk.architektary"
+        ]
     }
 </script>
 </body>
