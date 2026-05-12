@@ -37,18 +37,6 @@ ol {
     list-style: none;
 }
 
-.main-page {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-    grid-template-rows: minmax(700px, auto);
-
-}
-
-.secondary-page {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -67,7 +55,7 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.main-page header {
+ header {
     display: grid;
     grid-template-columns: 1fr 1140px 1fr;
     grid-template-rows: minmax(300px, auto) minmax(400px, auto);
@@ -75,13 +63,6 @@ input[type="radio"].visually-hidden {
     background: #5a89aa url("../img/header.webp") no-repeat 0 -100px;
     background-size: cover;
     box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.4);
-}
-
-.secondary-page header {
-    display: grid;
-    grid-template-columns: 1fr 1140px 1fr;
-    grid-column: 1/-1;
-    color: var(--text-color);
 }
 
 main {
@@ -110,10 +91,6 @@ nav h1 {
     color: white;
 }
 
-.secondary-page .nav-logo {
-    color: var(--text-color);
-}
-
 .main-nav {
     display: flex;
     flex-wrap: wrap;
@@ -140,10 +117,6 @@ nav h1 {
     color: white;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-}
-
-.secondary-page .main-nav a {
-    color: var(--text-color);
 }
 
 .main-nav a:hover {
@@ -494,19 +467,12 @@ header .slider-dots {
 }
 
 @media (max-width: 1200px) {
-    .main-page,
-    .main-page header,
-    .secondary-page,
-    .secondary-page header,
+    header,
     footer {
         grid-template-columns: 10px 1fr 10px;
     }
 
-    .main-page {
-        grid-template-rows: 400px;
-    }
-
-    .main-page header {
+    header {
         grid-template-rows: repeat(2, 200px);
         background: #5a89aa url("../img/header.webp") no-repeat;
     }
@@ -583,14 +549,6 @@ header .slider-dots {
         text-transform: uppercase;
     }
 
-    .secondary-page .main-nav a {
-        color: white;
-    }
-
-    .line-nav {
-        margin: 5px 30px;
-    }
-
     .nav-button {
         position: fixed;
         top: 0px;
@@ -660,10 +618,6 @@ header .slider-dots {
 
     .title {
         font-size: 20px;
-    }
-
-    .secondary-page h2 {
-        margin: 84px auto 34px;
     }
 
     .about-us .team {

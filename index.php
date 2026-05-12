@@ -28,15 +28,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body class="main-page">
+<body>
 <header id="top">
     <nav>
-        <a class="nav-logo">
-            <h1><span class="hidden-logo" itemprop="name">MARCHUK.BY | </span>Строительные проекты</h1>
-        </a>
+        <h1 class="nav-logo">
+            <span class="hidden-logo" itemprop="name">MARCHUK.BY | </span>Строительные проекты
+        </h1>
         <ul class="main-nav">
             <li class="link"><a>Главная</a></li>
-            <div class="line-nav"></div>
             <li class="link"><a href="#about-us">О нас</a></li>
             <li class="link"><a href="#services">Услуги</a></li>
             <li class="link"><a href="#reviews">Отзывы</a></li>
